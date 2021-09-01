@@ -1,4 +1,4 @@
-<? include (__DIR__ . "/common/header.html"); ?>
+<?php include (__DIR__ . "/common/header.html"); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
