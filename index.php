@@ -1,4 +1,4 @@
-<? include (__DIR__ . "/common/header.html"); ?>
+<?php include (__DIR__ . "/common/header.html"); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
@@ -20,7 +20,7 @@
 					I have previously worked on many apparel-related UI/UX design projects. I love to create fashionable designs, and I am looking to get more involved with brand-focusing projects as well.</span></p>
 			<p class="scroll">
 				<span class="arrow">
-					<? include (__DIR__ . "/common/arrow.html"); ?></span>
+					<?php include (__DIR__ . "/common/arrow.html"); ?></span>
 				Scroll down</p>
 		</section>
 		<section class="list" id="list">
@@ -43,4 +43,4 @@
 					<time>'17—'18</time></a></li></ul>
 				</section>
 </div>
-<? include (__DIR__ . "/common/footer.html"); ?>
+<?php include (__DIR__ . "/common/footer.html"); ?>
