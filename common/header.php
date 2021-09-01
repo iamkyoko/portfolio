@@ -48,7 +48,7 @@
 	<? else: ?>
 		<header class="header--link">
 			<a href="/#list">
-				<span class="arrow"><? include (__DIR__ . "/../common/arrow.html")?></span>
+				<span class="arrow"><?php echo ('arrow.html')?></span>
 				Home</a>
 		</header>
 	<? endif; ?>
