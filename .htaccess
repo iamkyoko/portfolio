@@ -19,4 +19,4 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
 
 # PHPをHTML上で動作させるための記述
-AddHandler php5.3-script .htm .html
+# AddHandler php5.3-script .htm .html
