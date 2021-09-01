@@ -1,5 +1,5 @@
 # Basic認証
-AuthUserFile /home/users/1/main.jp-iyemon/web/folio/.htpasswd
+AuthUserFile https://iamkyoko.github.io/portfolio/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Say the magic words!"
 AuthType Basic
