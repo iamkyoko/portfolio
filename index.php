@@ -10,7 +10,7 @@
 			<ul class="title">
 				<li class="title--title">P<span>o</span><span>r</span><span>t</span>folio</li>
 				<li class="title--slash"><span></span></li>
-				<li class="title--year"><span>&copy;</span><span>'<? echo date("y"); ?></span></li></ul>
+				<li class="title--year"><span>&copy;</span><span>'<?php echo date('y'); ?></span></li></ul>
 			<p class="bio">
 				Konnichiwa, I'm Kyoko.
 				<br><br>
