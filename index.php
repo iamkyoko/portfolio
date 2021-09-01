@@ -1,4 +1,3 @@
-<?php echo ('/common/header.php'); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
