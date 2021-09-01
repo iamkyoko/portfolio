@@ -1,4 +1,4 @@
-<!-- <?php include (__DIR__ . "/common/header.html"); ?> -->
+<? include (__DIR__ . "/common/header.html"); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
@@ -10,7 +10,7 @@
 			<ul class="title">
 				<li class="title--title">P<span>o</span><span>r</span><span>t</span>folio</li>
 				<li class="title--slash"><span></span></li>
-				<li class="title--year"><span>&copy;</span><span>/19</span></li></ul>
+				<li class="title--year"><span>&copy;</span><span>'<? echo date("y"); ?></span></li></ul>
 			<p class="bio">
 				Konnichiwa, I'm Kyoko.
 				<br><br>
@@ -19,8 +19,8 @@
 				<span>
 					I have previously worked on many apparel-related UI/UX design projects. I love to create fashionable designs, and I am looking to get more involved with brand-focusing projects as well.</span></p>
 			<p class="scroll">
-				<!-- <span class="arrow">
-					<?php include (__DIR__ . "/common/arrow.html"); ?></span> -->
+				<span class="arrow">
+					<? include (__DIR__ . "/common/arrow.html"); ?></span>
 				Scroll down</p>
 		</section>
 		<section class="list" id="list">
@@ -43,4 +43,4 @@
 					<time>'17—'18</time></a></li></ul>
 				</section>
 </div>
-<!-- <?php include (__DIR__ . "/common/footer.html"); ?> -->
+<? include (__DIR__ . "/common/footer.html"); ?>
