@@ -5,9 +5,6 @@ AuthName "Say the magic words!"
 AuthType Basic
 require valid-user
 
-# index.phpを表示させるための記述
-DirectoryIndex index.php index.htm index.cgi
-
 # URLの拡張子を省略
 # AddHandler application/x-httpd-php .php .html .htm
 
