@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
-    <?
+    <?php
 			$path = pathinfo($_SERVER["REQUEST_URI"]);
 			$key = $path["basename"];
 			$keys = array (
@@ -31,7 +31,7 @@
 </head>
 <!-- content -->
 <body>
-	<? $url = $_SERVER["REQUEST_URI"];
+	<?php $url = $_SERVER["REQUEST_URI"];
 	if ( $url == "/" ): ?>
 		<header class="header">
 			<ul class="header__wrap">
@@ -45,10 +45,10 @@
 					</li>
 			</ul>
 		</header>
-	<? else: ?>
+	<?php else: ?>
 		<header class="header--link">
 			<a href="/#list">
 				<span class="arrow"><?php echo ('arrow.html')?></span>
 				Home</a>
 		</header>
-	<? endif; ?>
+	<?php endif; ?>
