@@ -1,0 +1,22 @@
+# Basic認証
+AuthUserFile /home/users/1/main.jp-iyemon/web/folio/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Say the magic words!"
+AuthType Basic
+require valid-user
+
+# URLの拡張子を省略
+AddHandler application/x-httpd-php .php .html .htm
+
+# wwwをリダイレクト
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www\.kyokobaba\.com
+RewriteRule ^(.*)$ https://kyokobaba.com/$1 [R=301,L]
+
+# httpsにリダイレクト
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
+
+# PHPをHTML上で動作させるための記述
+AddHandler php5.3-script .htm .html
