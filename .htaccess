@@ -6,7 +6,18 @@ AuthType Basic
 require valid-user
 
 # URLの拡張子を省略
-AddHandler application/x-httpd-php .php .html .htm
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html 
+ 
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+# 拡張子有のURLをリダイレクト
+RewriteCond %{THE_REQUEST} \.(php|html)\ HTTP
+RewriteRule ^(.*)\.(php|html)$ /$1 [R=301,L]
 
 # wwwをリダイレクト
 RewriteEngine On
@@ -19,7 +30,6 @@ RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L] 
 
 # PHPをHTML上で動作させるための記述
-AddHandler php5.3-script .htm .html
-AddHandler fcgid-script .html
-AddType application/x-httpd-php .php .html
-AddType application/x-httpd-php-source .phps
+<FilesMatch "\.html$">
+  AddType application/x-httpd-php .html
+</FilesMatch>
