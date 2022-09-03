@@ -1,10 +1,11 @@
 var gulp         = require('gulp');
-var notify       = require("gulp-notify");
-var plumber      = require("gulp-plumber");
-var sass         = require('gulp-sass');
+var notify       = require('gulp-notify');
+var plumber      = require('gulp-plumber');
+var sass = require('gulp-sass')(require('sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var uglify       = require('gulp-uglify');
-var browserSync  = require("browser-sync");
+var browserSync  = require('browser-sync');
+
 
 
 // Path
