@@ -56,9 +56,9 @@ gulp.task('browser-sync', () => {
         baseDir: paths.html
       }
     });
-    gulp.watch(paths.html + "**/*.html", ['reload']);
-    gulp.watch(paths.css + "**/*.css", ['reload']);
-    gulp.watch(paths.jsDist + "**/*.js", ['reload']);
+    gulp.watch(paths.html + "**/*.html", gulp.series('reload'));
+    gulp.watch(paths.css + "**/*.css", gulp.series('reload'));
+    gulp.watch(paths.jsDist + "**/*.js", gulp.series('reload'));
   });
   gulp.task('reload', () => {
     browserSync.reload();
