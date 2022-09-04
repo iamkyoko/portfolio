@@ -13,11 +13,11 @@ var browserSync  = require('browser-sync');
 // Path
 
 var paths = {
-    'html'   : './dist/',
+    'html'   : './api/work/',
     'scss'   : './src/scss/',
-    'css'    : './dist/css/',
+    'css'    : './api/css/',
     'jsSrc'  : './src/js/',
-    'jsDist' : './dist/js/'
+    'jsDist' : './api/js/'
   }
 
 
