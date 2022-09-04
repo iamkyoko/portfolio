@@ -1,9 +1,11 @@
 var gulp         = require('gulp');
 var notify       = require('gulp-notify');
 var plumber      = require('gulp-plumber');
-var sass = require('gulp-sass')(require('sass'));
+var sass         = require('gulp-sass')(require('sass'));
+var sourcemaps   = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify       = require('gulp-uglify');
+var rename       = require('gulp-rename');
 var browserSync  = require('browser-sync');
 
 
@@ -29,12 +31,13 @@ var sassOptions = {
     }
 
     gulp.task('sass', function () {
-        gulp.src(paths.scss + '**/*.scss')
-        .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
-        .pipe(sass(sassOptions))
-        .pipe(autoprefixer())
-        .pipe(gulp.dest(paths.css))
-
+      return gulp.src(paths.scss + '**/*.scss')
+      .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
+      .pipe(sourcemaps.init())
+      .pipe(sass(sassOptions))
+      .pipe(autoprefixer())
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.css))
 });
 
 
@@ -42,10 +45,11 @@ var sassOptions = {
 
     //JS圧縮
     gulp.task('js', function () {
-        gulp.src(paths.jsSrc + '**/*.js')
-        .pipe(plumber())
-        .pipe(uglify())
-        .pipe(gulp.dest(paths.jsDist));
+      return gulp.src(paths.jsSrc + '**/*.js')
+      .pipe(plumber())
+      .pipe(uglify())
+      .pipe(rename({extname: '.min.js'}))
+      .pipe(gulp.dest(paths.jsDist));
     });
 
 
