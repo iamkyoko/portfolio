@@ -1,4 +1,5 @@
-<?php include (__DIR__ . "./helper/header.php"); ?>
+<?php include (__DIR__ . "/helper/header.php"); ?>
+<?php phpinfo(); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
