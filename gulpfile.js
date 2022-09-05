@@ -13,11 +13,11 @@ var browserSync  = require('browser-sync');
 // Path
 
 var paths = {
-    'html'   : './api/work/',
+    'html'   : './dist/work/',
     'scss'   : './src/scss/',
-    'css'    : './api/css/',
+    'css'    : './dist/css/',
     'jsSrc'  : './src/js/',
-    'jsDist' : './api/js/'
+    'jsDist' : './dist/js/'
   }
 
 
@@ -48,7 +48,7 @@ var sassOptions = {
       return gulp.src(paths.jsSrc + '**/*.js')
       .pipe(plumber())
       .pipe(uglify())
-      .pipe(rename({extname: '.min.js'}))
+      // .pipe(rename({extname: '.min.js'}))
       .pipe(gulp.dest(paths.jsDist));
     });
 
