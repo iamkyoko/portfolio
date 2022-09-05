@@ -24,7 +24,7 @@
 			}
 	?>
 <!-- css -->
-	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
 	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
@@ -43,7 +43,7 @@
 	<?php else: ?>
 		<header class="header--link">
 			<a href="/#list">
-				<span class="arrow"><?php include (__DIR__ . "./arrow.html"); ?></span>
+				<span class="arrow"><?php include (__DIR__ . "/arrow.html"); ?></span>
 				Home</a>
 		</header>
 	<?php endif; ?>
