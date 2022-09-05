@@ -2,6 +2,38 @@
 
 console.log('JS yometeru');
 
+window.onload = function(){
+    // head
+    // 追加するHTMLを定義
+    var head_content = '<link rel="icon" href="example.com/icon.png" sizes="16x16" type="image/png">'+
+    '<meta property="og:url" content="example.com" />'+
+    '<meta property="og:title" content="共通化デモサイト" />'+
+    '<meta property="og:type" content="website">'+
+    '<meta property="og:description" content="JavaScriptを使って共通化するためのデモサイトです。">'+
+    '<meta property="og:image" content="example.com/ogp.png" />'+
+    '<meta name="twitter:card" content="summary" />'+
+    '<meta name="twitter:site" content="@PocoPota_io" />'+
+    '<meta property="og:site_name" content="共通化デモサイト" />'+
+    '<meta property="og:locale" content="ja_JP" />'+
+    '<link rel="stylesheet" href="index.css">';
+    var head = document.getElementById('head'); // 追加する部分を取得
+    head.insertAdjacentHTML('beforeend', head_content);
+    // insertAdjacentHTMLでHTMLを追加
+
+    var header_content = '<div id="header-inner">'+
+    '<h1>共通化デモサイト</h1>'+
+    '<ul>'+
+    '<li>TOP</li>'+
+    '<li>SERVICES</li>'+
+    '<li>CONTACT</li>'+
+    '</ul>'+
+    '</div>';
+    var header = document.getElementById('header'); // 追加する部分を取得
+    header.innerHTML = header_content; // innerHTMLでHTMLを追加
+
+    $('#header').load('dist/helper/header.html');
+}
+
 $(document).ready(function () {
     function Error() {
         var vh = $(window).outerHeight(),
