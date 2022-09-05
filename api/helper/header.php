@@ -24,7 +24,7 @@
 			}
 	?>
 <!-- css -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php include (__DIR__ . "../css/style.css")?>"/>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
 	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
