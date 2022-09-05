@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja">		
 
 <head id="head">
 	<!-- 言語・環境設定 -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
 
 	<!-- ページの内容 -->
 	<title>共通化デモサイ</title>
-	<meta name="description" content="JavaScriptを使って共通化するためのデモサイトです。">
-
-	<!-- サイトアイコン -->
-	<link rel="icon" href="example.com/icon.png" sizes="16x16" type="image/png">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 	<body>
-		<header id="header"></header>
+		<header id="header" class="header"></header>
 		<div class="home">
 			<figure class="dots">
 				<div class="d-a"></div>
@@ -28,7 +22,7 @@
 					<ul class="title">
 						<li class="title--title">P<span>o</span><span>r</span><span>t</span>folio</li>
 						<li class="title--slash"><span></span></li>
-						<li class="title--year"><span>&copy;</span><?php echo date('y'); ?></li></ul>
+						<li class="title--year"><span>&copy;</span>22</li></ul>
 					<p class="bio">
 						Konnichiwa, I'm Kyoko.
 						<br><br>
@@ -45,23 +39,26 @@
 					<ul class="list--head">
 						<li>SELECTED WORKS <span></span> 2015 / 2019</li></ul>
 					<ul class="list--list">
-						<li><a href="work/nord">Cucina Nord Ibaraki
+						<li><a href="dist/work/nord.html">Cucina Nord Ibaraki
 							<time>'17</time></a></li>
-						<li><a href="work/ined">Inéd
+						<li><a href="dist/work/ined.html">Inéd
 							<time>'17</time></a></li>
-						<li><a href="work/ayano">Ayano Mashiro
+						<li><a href="dist/work/ayano.html">Ayano Mashiro
 							<time>'17</time></a></li>
-						<li><a href="work/fos">Flandre Online Store
+						<li><a href="dist/work/fos.html">Flandre Online Store
 							<time>'15—'18</time></a></li>
-						<li><a href="work/transwork">Trans Work
+						<li><a href="dist/work/transwork.html">Trans Work
 							<time>'16—'18</time></a></li>
-						<li><a href="work/lanvin">Lanvin en Bleu
+						<li><a href="dist/work/lanvin.html">Lanvin en Bleu
 							<time>'18—'19</time></a></li>
-						<li><a href="work/maquia">Maquia Online
+						<li><a href="dist/work/maquia.html">Maquia Online
 							<time>'17—'18</time></a></li></ul>
 						</section>
 		</div>
 		<script src="dist/js/script.min.js"></script>
-		<script>$('#header').load('dist/helper/header.html')</script>
+		<script>
+			$('#head').load('dist/helper/head.html');
+			$('#header').load('dist/helper/header.html');
+		</script>
 	</body>
 </html>
