@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">		
+
+<head id="head">
+	<!-- 言語・環境設定 -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="JavaScriptを使って共通化するためのデモサイトです。">
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
+
+	<!-- ページの内容 -->
+	<title>共通化デモサイ</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+</head>
+	<body>
+		<header id="header" class="header"></header>
+<div class="page">
+	<ul class="info">
+		<li class="info--title">
+			<h3>Ayano Mashiro</h3>
+			<time>2017</time>
+		</li>
+		<li class="info--desc"><p>
+      <span>
+				I reinvented the look of Japanese singer <i>Ayano Mashiro</i>’s website.</span>
+			<span>
+				I came at it with a "less is more" approach, to keep all of the information an photos looking tidy. Keeping the look minimalistic really helped the beautiful photos stand out to their full potential.</span></p></li>
+    <li class="jp"><p>
+				Sony Music所属のアーティスト・綾野ましろさんのオフィシャルサイトのリニューアルに携わらせていただきました。装飾を抑えてシンプルに突き詰めることで、写真やバナーをより際立たせ、視覚的な情報量の整理・軽減を目指しました。
+				</p></li>
+	</ul>
+  <section class="image">
+		<figure class="c-1">
+			<img src="dist/work/images\project__trans02.jpg"></figure>
+		<figure class="c-2">
+			<img src="../images/project__ayano02.png"></figure>
+		<figure class="c-1 p0">
+			<img src="../images/project__ayano03.png"></figure>
+	</section>
+</div>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/script.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script>
+			$('#header').load('../helper/header.html');
+			$('#footer').load('../helper/footer.html');
+		</script>
+	</body>
+</html>
