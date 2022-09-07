@@ -35,11 +35,6 @@
 	if ( $url == "/" ): ?>
 		<header class="header">
 			<ul class="header__wrap">
-            <li class="arrow">
-               <figure class="place shape"></figure> 
-                     <p>index</p>
-               <a href="/"></a>
-            </li>
             <li class="kyoko">
                KYOKO BABA
             </li>

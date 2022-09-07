@@ -10,7 +10,7 @@
       </div>
       
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <script type="text/javascript" src="js/script.min.js"></script>
+      <script type="text/javascript" src="js/script.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
    </body>
 </html>
