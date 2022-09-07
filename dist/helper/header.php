@@ -25,7 +25,7 @@
          }
 	?>
 <!-- css -->
-	<link rel="stylesheet" type="text/css" href="<?php echo $_SERVER['HTTPS'] . $_SERVER['HTTP_HOST'] . "/dist/css/style.css" ?>"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $_SERVER['HTTPS'] . $_SERVER['HTTP_HOST'] . "/css/style.css" ?>"/>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
 	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
