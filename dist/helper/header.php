@@ -7,6 +7,7 @@
       $path = pathinfo($_SERVER["REQUEST_URI"]);
       $key = $path["filename"];
       $keys = array (
+         "facymedia" => "FACY MEDIA",
          "nord"      => "Cucina Nord Ibaraki",
          "ined"      => "INÉD",
          "ayano"     => "Ayano Mashiro",
@@ -16,7 +17,7 @@
          "maquia"    => "MAQUIA ONLINE"
          );
       $myName = "Kyoko Baba";
-         if ($key == null) {
+         if ($key == "index") {
                echo "<title>" . $myName . " — " . "Portfolio" . "</title>";
          } else {
             $title = $keys[$key];
@@ -24,7 +25,7 @@
          }
 	?>
 <!-- css -->
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="<?php echo $_SERVER['DOCUMENT_ROOT'] . "/dist/css/style.css" ?>"/>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
 	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
