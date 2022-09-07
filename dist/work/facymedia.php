@@ -1,4 +1,4 @@
-<?php include (__DIR__ . "/helper/header.php"); ?>
+<?php include (__DIR__ . "/../helper/header.php"); ?>
 
 <div class="page">
 	<div class="info new">
@@ -37,4 +37,4 @@
 	</section>
 </div>
 
-<?php include (__DIR__ . "/helper/footer.php");
+<?php include (__DIR__ . "/../helper/footer.php");
