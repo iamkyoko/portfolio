@@ -22,18 +22,17 @@ var paths = {
 
 
 // SASS
-
 var sassOptions = {
 
-    //圧縮設定 nested, expanded, compact, compressed
-    outputStyle: 'compressed'
+   //圧縮設定 nested, expanded, compact, compressed
+   // outputStyle: 'nested'
 
     }
 
     gulp.task('sass', function () {
       return gulp.src(paths.scss + '**/*.scss')
       .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
-      .pipe(sourcemaps.init())
+      .pipe(sourcemaps.init({ loadMaps: true }))
       .pipe(sass(sassOptions))
       .pipe(autoprefixer())
       .pipe(sourcemaps.write('./'))

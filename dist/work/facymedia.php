@@ -1,23 +1,5 @@
-<!DOCTYPE html>
-<html lang="ja">		
+<?php include (__DIR__ . "/helper/header.php"); ?>
 
-<head id="head">
-	<!-- 言語・環境設定 -->
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<!-- favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
-	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
-
-	<!-- ページの内容 -->
-	<title>New Childpage</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<!-- css -->
-	<link rel="stylesheet" type="text/css" href="../css/style.css"/>
-</head>
-	<body>
-		<header id="header" class="header"></header>
 <div class="page">
 	<div class="info new">
 		<div class="project-intro">
@@ -54,14 +36,5 @@
 			<img src="../../project__trans02.jpg"></figure>
 	</section>
 </div>
-<!-- common -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="/js/script.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-		<script>
-			$('#header').load('../helper/header.html');
-			$('#footer').load('../helper/footer.html');
-		</script>
-	</body>
-</html>
-<!-- /common -->
+
+<?php include (__DIR__ . "/helper/footer.php");
