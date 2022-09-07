@@ -32,7 +32,6 @@
 </head>
 <!-- content -->
 <body>
-   <?php echo $_SERVER["HTTP_HOST"]; ?>
 	<?php $url = $_SERVER["REQUEST_URI"];
 	if ( $url == "/" ): ?>
 		<header class="header">
