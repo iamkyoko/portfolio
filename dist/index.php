@@ -1,4 +1,4 @@
-<? include (__DIR__ . "/helper/header.html"); ?>
+<? include (__DIR__ . "/helper/header.php"); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
@@ -50,4 +50,4 @@
 
 </div>
 
-<? include (__DIR__ . "/helper/footer.html");
+<? include (__DIR__ . "/helper/footer.php");
