@@ -1,4 +1,4 @@
-<? include (__DIR__ . "/helper/header.php"); ?>
+<?php include (__DIR__ . "/helper/header.php"); ?>
 <div class="home">
 	<figure class="dots">
 		<div class="d-a"></div>
@@ -21,7 +21,7 @@
             I have previously worked on many apparel-related UI/UX design projects. I love to create fashionable designs, and I am looking to get more involved with brand-focusing projects as well.</span></p>
       <p class="scroll">
          <span class="arrow">
-            <? include (__DIR__ . "/helper/arrow.html"); ?></span>
+            <?php include (__DIR__ . "/helper/arrow.html"); ?></span>
          Scroll down</p>
    </section>
 
@@ -50,4 +50,4 @@
 
 </div>
 
-<? include (__DIR__ . "/helper/footer.php");
+<?php include (__DIR__ . "/helper/footer.php");
