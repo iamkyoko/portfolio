@@ -1,8 +1,0 @@
-#Directory
-node_modules
-.vercel
-.vscode
-
-# css
-.sass-cache/
-!/dist/css/*.css.map
