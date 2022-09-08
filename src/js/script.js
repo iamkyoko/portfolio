@@ -16,10 +16,10 @@ $(document).ready(function () {
    let path;
    if (
       (Error(),
-      $(window).on("resize", function () {
-         Error();
-      }),
-      "/" == location.pathname)
+         $(window).on("resize", function () {
+            Error();
+         }),
+         "/" == location.pathname)
    ) {
       function Height() {
          var vh = $(window).outerHeight();
@@ -35,9 +35,9 @@ $(document).ready(function () {
             deg = 1.7320508075689,
             sc =
                ((scrollElement = "scrollingElement" in document ? document.scrollingElement : document.documentElement),
-               function () {
-                  return (scrollPoint = scrollElement.scrollTop), (flag = prePoint > scrollPoint), (prePoint = scrollPoint), flag;
-               }),
+                  function () {
+                     return (scrollPoint = scrollElement.scrollTop), (flag = prePoint > scrollPoint), (prePoint = scrollPoint), flag;
+                  }),
             scrollElement,
             scrollPoint,
             prePoint,
@@ -51,10 +51,10 @@ $(document).ready(function () {
                sc()
                   ? st <= 0.2 * oh && (TweenMax.to(".d-a", 1, d_a), TweenMax.to(".d-b", 1, d_b), TweenMax.to(".d-c", 1, d_c), TweenMax.to(".d-d", 1, d_d))
                   : st >= 0.8 * oh &&
-                    (TweenMax.to(".d-a", 2, { ease: ease, top: "16%", left: "12%" }),
-                    TweenMax.to(".d-b", 2, { ease: ease, top: "89%", left: "44%" }),
-                    TweenMax.to(".d-c", 2, { ease: ease, top: "82%", left: "60%" }),
-                    TweenMax.to(".d-d", 2, { ease: ease, top: "30%", left: "82%" }));
+                  (TweenMax.to(".d-a", 2, { ease: ease, top: "16%", left: "12%" }),
+                     TweenMax.to(".d-b", 2, { ease: ease, top: "89%", left: "44%" }),
+                     TweenMax.to(".d-c", 2, { ease: ease, top: "82%", left: "60%" }),
+                     TweenMax.to(".d-d", 2, { ease: ease, top: "30%", left: "82%" }));
          });
       }
       Height(),
