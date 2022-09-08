@@ -19,7 +19,7 @@ jobs:
     - name: Transpile for deployment
       run: |
         npm install
-        npm install gulp-cli
+        npm install gulp
         gulp
 
     - name: Deploy via FTP
