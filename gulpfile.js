@@ -19,7 +19,7 @@ var paths = {
    'src_scss': './src/scss/',
    'src_js': './src/js',
    'src_image': './src/image',
-   'src_helper': './src/helper',
+   'src_inc': './src/inc',
    'src_work': './src/work',
    'src_font': './src/font',
 
@@ -63,10 +63,10 @@ gulp.task('image', function () {
 
 
 
-// Helper
+// inc
 
-gulp.task('helper', function () {
-   return gulp.src(paths.src_helper + '**/*')
+gulp.task('inc', function () {
+   return gulp.src(paths.src_inc + '**/*')
       .pipe(gulp.dest(paths.dist))
 });
 
@@ -142,4 +142,4 @@ gulp.task('watch', function () {
 
 // gulp
 
-gulp.task('default', gulp.series('sass', 'image', 'helper', 'work', 'index', 'font', 'js'));
+gulp.task('default', gulp.series('sass', 'image', 'inc', 'work', 'index', 'font', 'js'));
