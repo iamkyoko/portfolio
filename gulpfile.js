@@ -15,18 +15,21 @@ var browserSync = require('browser-sync');
 var paths = {
 
    // Where the original exists
-   'src'       : './src/',
-   'src_scss'  : './src/scss/',
-   'src_js'    : './src/js',
-   'src_image' : './src/image',
+   'src': './src/',
+   'src_scss': './src/scss/',
+   'src_js': './src/js',
+   'src_image': './src/image',
    'src_helper': './src/helper',
-   'src_work'  : './src/work',
-   'src_font'  : './src/font',
+   'src_work': './src/work',
+   'src_font': './src/font',
 
    // Destination
-   'dist'      : './dist',
-   // For directory which has a different name from 'src'
-   'css'       : './dist/css/', 
+   'dist': './dist',
+
+   // for BrowserSync
+   'css': './dist/css/',
+   'work': './dist/work/',
+   'js': './dist/js/'
 
 }
 
@@ -101,9 +104,28 @@ gulp.task('font', function () {
 gulp.task('js', function () {
    return gulp.src(paths.src_js + '**/*.js')
       .pipe(plumber())
-      .pipe(uglify()) // Compile files
+      // .pipe(uglify())
       // .pipe(rename({extname: '.min.js'}))
       .pipe(gulp.dest(paths.dist));
+});
+
+
+
+// BrowserSync
+
+gulp.task('browser-sync', () => {
+   browserSync({
+      server: {
+         baseDir: paths.dist
+      }
+   });
+   gulp.watch(paths.dist + "index.php", gulp.series('reload'));
+   gulp.watch(paths.work + "**/*", gulp.series('reload'));
+   gulp.watch(paths.css + "**/*.css", gulp.series('reload'));
+   gulp.watch(paths.js + "**/*.js", gulp.series('reload'));
+});
+gulp.task('reload', () => {
+   browserSync.reload();
 });
 
 
@@ -111,9 +133,13 @@ gulp.task('js', function () {
 // watch
 
 gulp.task('watch', function () {
-   gulp.watch(paths.src_scss + '**/*.scss', gulp.series('sass'));
-   gulp.watch(paths.src_js + '**/*.js', gulp.series('js'));
+   gulp.watch(paths.src + "index.php", gulp.series('index'));
+   gulp.watch(paths.src_scss + "**/*.scss", gulp.series('sass'));
+   gulp.watch(paths.src_js + "**/*.js", gulp.series('js'));
 });
 
 
-gulp.task('default', gulp.series('sass', 'image', 'helper', 'work', 'index', 'font', 'js' ));
+
+// gulp
+
+gulp.task('default', gulp.series('sass', 'image', 'helper', 'work', 'index', 'font', 'js'));

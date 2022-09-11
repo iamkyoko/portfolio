@@ -17,11 +17,11 @@
          "maquia"    => "MAQUIA ONLINE"
          );
       $myName = "Kyoko Baba";
-         if ($key == "index") {
-               echo "<title>" . $myName . " — " . "Portfolio" . "</title>";
+         if ($key == null) {
+               echo "<title>" . $myName . " — Portfolio" . "</title>";
          } else {
             $title = $keys[$key];
-            echo "<title>" . $title . " — " . $myName . "</title>";
+            echo '<title>' . $title . ' — ' . $myName . '</title>';
          }
 	?>
 <!-- css -->
