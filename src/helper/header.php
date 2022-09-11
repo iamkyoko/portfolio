@@ -27,8 +27,8 @@
 <!-- css -->
 	<link rel="stylesheet" type="text/css" href="<?php echo (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"] . "/css/style.css"; ?>"/>
 <!-- favicon -->
-	<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
-	<link rel="apple-touch-icon" sizes="256x256" href="/images/favicon.ico"/>
+	<link rel="shortcut icon" type="image/x-icon" href="/image/favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="256x256" href="/image/favicon.ico"/>
 </head>
 <!-- content -->
 <body>
