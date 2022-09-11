@@ -6,7 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 
 
 
@@ -113,33 +113,44 @@ gulp.task('js', function () {
 
 // BrowserSync
 
-gulp.task('browser-sync', () => {
-   browserSync({
+gulp.task('browser-sync', (done) => {
+   browserSync.init({
       server: {
          baseDir: paths.dist
-      }
+      },
    });
+   done();
    gulp.watch(paths.dist + "index.php", gulp.series('reload'));
    gulp.watch(paths.work + "**/*", gulp.series('reload'));
    gulp.watch(paths.css + "**/*.css", gulp.series('reload'));
    gulp.watch(paths.js + "**/*.js", gulp.series('reload'));
 });
-gulp.task('reload', () => {
+
+gulp.task('reload', (done) => {
    browserSync.reload();
+   done();
 });
 
 
 
 // watch
 
-gulp.task('watch', function () {
+gulp.task('watch', (done) => {
    gulp.watch(paths.src + "index.php", gulp.series('index'));
+   gulp.watch(paths.src_inc + "**/*", gulp.series('inc'));
+   gulp.watch(paths.src_work + "**/*.php", gulp.series('work'));
    gulp.watch(paths.src_scss + "**/*.scss", gulp.series('sass'));
    gulp.watch(paths.src_js + "**/*.js", gulp.series('js'));
+   done();
+   console.log(('gulp watch started'));
 });
 
 
 
 // gulp
 
-gulp.task('default', gulp.series('sass', 'image', 'inc', 'work', 'index', 'font', 'js'));
+gulp.task('default',
+   gulp.series('sass', 'image', 'inc', 'work', 'index', 'font', 'js', 'browser-sync',
+   function(done){
+      done();
+}));

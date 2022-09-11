@@ -84,7 +84,7 @@ $(document).ready(function () {
             vw;
          $(window).innerWidth() >= 768 ? ($(".c-1").css("grid-column", "1 / " + end), $(".c-2").css("grid-column", "span " + column / 2)) : $(".c-1, .c-2").css("grid-column", "");
       }
-      $(".kyoko").css("display", "none"),
+      // $(".kyoko").css("display", "none"),
          $(".footer").css("position", "relative"),
          Column(),
          $(window).on("resize", function () {

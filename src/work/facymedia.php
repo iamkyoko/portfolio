@@ -10,7 +10,7 @@
 			</div>
 			
 		</div>
-		<div class="info--title new">
+		<div class="info--title project-title new">
 			<h1 class="en">Owned media renewal design.</h1>
 		</div>
 		<div class="info--desc project-description">

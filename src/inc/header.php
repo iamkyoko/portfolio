@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ja">
+<meta http-equiv="Content-Language" content="ja">
+<meta name="google" content="notranslate">
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
@@ -8,6 +9,7 @@
       $key = $path["filename"];
       $keys = array (
          "facymedia" => "FACY MEDIA",
+         "facyapp"   => "FACY APP",
          "nord"      => "Cucina Nord Ibaraki",
          "ined"      => "INÉD",
          "ayano"     => "Ayano Mashiro",
@@ -32,20 +34,18 @@
 </head>
 <!-- content -->
 <body>
-	<?php $url = $_SERVER["REQUEST_URI"];
-	if ( $url == "/" ): ?>
-		<header class="header">
-			<ul class="header__wrap">
-            <li class="kyoko">
-               KYOKO BABA
-            </li>
-			</ul>
-		</header>
-	<?php else: ?>
-		<header class="header--link">
-			<a href="/#list">
-				<span class="arrow"><?php include (__DIR__ . "/../inc/arrow.html")?></span>
-				Home</a>
-		</header>
-	<?php endif;
-   
+   <header class="header">
+      <ul class="header__wrap">
+         <li class="kyoko">
+            KYOKO BABA
+         </li>
+      <?php $url = $_SERVER["REQUEST_URI"];
+      if ( $url != "/" ): ?>
+         <li class="header--link">
+            <a href="/#list">
+               <span class="arrow"><?php include (__DIR__ . "/../inc/arrow.html")?></span>
+               Home</a>
+         </li>
+      <?php endif; ?>
+      </ul>
+   </header>

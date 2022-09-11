@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&subset=japanese");
 
 @font-face {
-    font-family: "Orkney";
-    font-style: normal;
-    font-weight: 400;
-    src: url("../font/OrkneyRegular.woff") format("woff");
+   font-family: "GT Walsheim";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../font/GTWalsheimPro-Regular.woff") format("woff");
 }
   
 @font-face {
-font-family: "Orkney";
-font-style: italic;
-font-weight: 400;
-src: url("../font/OrkneyRegularItalic.woff") format("woff");
+   font-family: "GT Walsheim";
+   font-style: italic;
+   font-weight: 400;
+   src: url("../font/GTWalsheimPro-RegularOblique.woff") format("woff");
 }
 
 @font-face {
-font-family: "Mazius";
-font-style: normal;
-font-weight: 400;
-src: url("../font/MaziusDisplayRegular.woff") format("woff");
+   font-family: "GT Walsheim";
+   font-style: normal;
+   font-weight: 700;
+   src: url("../font/GTWalsheimPro-Bold.woff") format("woff");
+}
+
+@font-face {
+   font-family: "Mazius";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../font/MaziusDisplayRegular.woff") format("woff");
 }
 
 @font-face {
@@ -29,34 +36,104 @@ src: url("../font/MaziusDisplayRegular.woff") format("woff");
 }
 
 $jp-base-font: "Noto Sans JP";
-$en-base-font: "Orkney";
+$en-base-font: "GT Walsheim";
 $en-head-font: "PP Eiko Italic";
 
-$base-font-size: calc(11px + -1 * (100vw - 480px) / 520);
+
+:root {
+   --base-font-size: .266667vw;
+   // calc(11px + -1 * (100vw - 480px) / 520);
+   --head-font-size: 10vw;
+}
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption {
+   font-size: inherit;
+   font-weight: inherit;
+   font-style: inherit;
+   color: inherit;
+   line-height: inherit;
+   vertical-align: inherit;
+   transition: inherit;
+   cursor: default;
+}
+
+.kyoko {
+   font-family: $en-base-font;
+   font-weight: 700;
+   font-size: 12px;
+}
+
+h3, p, figcaption {
+   font-family: $jp-base-font;
+   font-size: var(--base-font-size);
+   line-height: 1.8;
+}
+
+.project-title {
+   margin: 6rem 0;
+   font-family: $en-head-font;
+   font-size: var(--head-font-size);
+   line-height: 1.2;
+   text-align: right;
+   text-transform: uppercase;
+   word-wrap: normal;
+}
+
+.section-title {
+   font-family: $en-head-font;
+   font-size: 4rem;
+}
 
 .jp, .jp * {
-    font-size: 11px;
-    font-family: $jp-base-font;
-    font-weight: 400;
-    letter-spacing: -.03em;
-    line-height: 1.6;
-  }
+   font-size: var(--base-font-size);
+   font-family: $jp-base-font;
+   font-weight: 400;
+   letter-spacing: -.03em;
+   line-height: 1.6;
+}
 
 .en, .en * {
-    font-size: calc(11px + -1 * (100vw - 480px) / 520);
-    font-family: $en-base-font;
-    font-weight: 400;
-    line-height: 1.6;
-}
-  
-@media (min-width: 480px) {
-    .jp, .jp * {
-        font-size: calc(11px + -1 * (100vw - 480px) / 520);
-    }
+   font-size: calc(11px + -1 * (100vw - 480px) / 520);
+   font-family: $en-base-font;
+   font-weight: 400;
+   line-height: 1.6;
 }
 
-@media (min-width: 1000px) {
-    .jp, .jp * {
-        font-size: 10px;
-    }
+@include mq(sm) {
+   :root {
+      --head-font-size: 8.333vw;
+   }
+}
+
+@include mq(md) {
+   :root {
+      --head-font-size: 6rem;
+   }
+}
+
+@include mq(lg) {
+   .title {
+      font-size: 16vw;
+   }
+}
+
+@include mq(xl) {
+   :root {
+      --base-font-size: 11px;
+   }
+   .footer, time, .list--head li {
+      font-size: 0.625vw;
+   }
+   .list--list li {
+      &::before,
+      &::after {
+         font-size: 0.625vw;
+      }
+   }
+   .jp {
+      font-size: 0.78125vw;
+      * {
+         font-size: 0.78125vw;
+      }
+   }
 }
