@@ -13,107 +13,107 @@ var browserSync = require('browser-sync');
 // Path
 
 var paths = {
-  'src': './src/',
-  'html': './dist/work/',
-  'scss': './src/scss/',
-  'srcImage': './src/images',
-  'srcHelper': './src/helper',
-  'srcWork': './src/work',
-  'srcFonts': './src/font',
-  'dist': './dist',
-  'css': './dist/css/',
-  'jsSrc': './src/js/',
-  'jsDist': './dist/js/'
+
+   // Where the original exists
+   'src'       : './src/',
+   'src_scss'  : './src/scss/',
+   'src_js'    : './src/js',
+   'src_image' : './src/image',
+   'src_helper': './src/helper',
+   'src_work'  : './src/work',
+   'src_font'  : './src/font',
+
+   // Destination
+   'dist'      : './dist',
+   // For directory which has a different name from 'src'
+   'css'       : './dist/css/', 
+
 }
+
 
 
 // SASS
+
 var sassOptions = {
-  //圧縮設定 nested, expanded, compact, compressed
-  // outputStyle: 'nested'
+   // 圧縮設定 nested, expanded, compact, compressed
+   // outputStyle: 'nested'
 }
 
 gulp.task('sass', function () {
-  return gulp.src(paths.scss + '**/*.scss')
-    .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
-    .pipe(sourcemaps.init({ loadMaps: true }))
-    .pipe(sass(sassOptions))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write('./'))
-    .pipe(gulp.dest(paths.css))
+   return gulp.src(paths.src_scss + '**/*.scss')
+      .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
+      .pipe(sourcemaps.init({ loadMaps: true }))
+      .pipe(sass(sassOptions))
+      .pipe(autoprefixer())
+      .pipe(sourcemaps.write('./'))
+      .pipe(gulp.dest(paths.css))
 });
 
-// Images
 
-gulp.task('images', function () {
-  return gulp.src(paths.srcImage + '**/*.jpg')
-    .pipe(gulp.dest(paths.dist))
+
+// Image
+
+gulp.task('image', function () {
+   return gulp.src(paths.src_image + '**/*')
+      .pipe(gulp.dest(paths.dist))
 });
 
-// Helper files
 
-gulp.task('helpers', function () {
-  return gulp.src(paths.srcHelper + '**/*')
-    .pipe(gulp.dest(paths.dist))
+
+// Helper
+
+gulp.task('helper', function () {
+   return gulp.src(paths.src_helper + '**/*')
+      .pipe(gulp.dest(paths.dist))
 });
 
-// Work files
+
+
+// Work
 
 gulp.task('work', function () {
-  return gulp.src(paths.srcWork + '**/*')
-    .pipe(gulp.dest(paths.dist))
+   return gulp.src(paths.src_work + '**/*')
+      .pipe(gulp.dest(paths.dist))
 });
 
-// Index file
+
+
+// Index
 
 gulp.task('index', function () {
-  return gulp.src(paths.src + 'index.php')
-    .pipe(gulp.dest(paths.dist))
+   return gulp.src(paths.src + 'index.php')
+      .pipe(gulp.dest(paths.dist))
 });
 
-// Font files
 
-gulp.task('fonts', function () {
-  return gulp.src(paths.srcFonts + '**/*')
-    .pipe(gulp.dest(paths.dist))
+
+// Font
+
+gulp.task('font', function () {
+   return gulp.src(paths.src_font + '**/*')
+      .pipe(gulp.dest(paths.dist))
 });
+
+
 
 // JavaScript
 
-//JS圧縮
 gulp.task('js', function () {
-  return gulp.src(paths.jsSrc + '**/*.js')
-    .pipe(plumber())
-    .pipe(uglify())
-    // .pipe(rename({extname: '.min.js'}))
-    .pipe(gulp.dest(paths.jsDist));
+   return gulp.src(paths.src_js + '**/*.js')
+      .pipe(plumber())
+      .pipe(uglify()) // Compile files
+      // .pipe(rename({extname: '.min.js'}))
+      .pipe(gulp.dest(paths.dist));
 });
 
-
-// BrowserSync
-
-gulp.task('browser-sync', () => {
-  browserSync({
-    server: {
-      baseDir: paths.html
-    }
-  });
-  gulp.watch(paths.html + "**/*.html", gulp.series('reload'));
-  gulp.watch(paths.css + "**/*.css", gulp.series('reload'));
-  gulp.watch(paths.jsDist + "**/*.js", gulp.series('reload'));
-});
-gulp.task('reload', () => {
-  browserSync.reload();
-});
 
 
 // watch
 
 gulp.task('watch', function () {
-  gulp.watch(paths.scss + '**/*.scss', gulp.series('sass'));
-  gulp.watch(paths.jsSrc + '**/*.js', gulp.series('js'));
+   gulp.watch(paths.src_scss + '**/*.scss', gulp.series('sass'));
+   gulp.watch(paths.src_js + '**/*.js', gulp.series('js'));
 });
 
 
-gulp.task('default', gulp.series('sass', 'js', 'images', 'helpers', 'work', 'fonts', 'index'));
-
+gulp.task('default', gulp.series('sass', 'image', 'helper', 'work', 'index', 'font', 'js' ));
