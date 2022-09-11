@@ -16,7 +16,7 @@
          Konnichiwa, I'm Kyoko.
          <br><br>
          <span>
-            test I'm a web designer with 4 years experience who is seeking to expand my expertise. I'm curious, passionate, and love to learn new things! (Also I love to do yoga and <a class="bio--link" href="https://www.instagram.com/itskyooko/" target="_blank">doodle</a>.)</span>
+            I'm a web designer with 4 years experience who is seeking to expand my expertise. I'm curious, passionate, and love to learn new things! (Also I love to do yoga and <a class="bio--link" href="https://www.instagram.com/itskyooko/" target="_blank">doodle</a>.)</span>
          <span>
             I have previously worked on many apparel-related UI/UX design projects. I love to create fashionable designs, and I am looking to get more involved with brand-focusing projects as well.</span></p>
       <p class="scroll">
