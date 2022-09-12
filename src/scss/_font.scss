@@ -41,12 +41,12 @@ $en-head-font: "PP Eiko Italic";
 
 
 :root {
-   --base-font-size: .266667vw;
-   // calc(11px + -1 * (100vw - 480px) / 520);
+   --jp-base-font-size: calc(11px + -1 * (100vw - 480px) / 800);;
+   --en-base-font-size: calc(13px + -1 * (100vw - 480px) / 800);
    --head-font-size: 10vw;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption {
+h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::before, ::after {
    font-size: inherit;
    font-weight: inherit;
    font-style: inherit;
@@ -63,10 +63,19 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption {
    font-size: 12px;
 }
 
-h3, p, figcaption {
+h3, p, time {
+   font-size: var(--en-base-font-size);
+   line-height: 1.5;
+}
+
+figcaption {
    font-family: $jp-base-font;
-   font-size: var(--base-font-size);
-   line-height: 1.8;
+   font-size: var(--jp-base-font-size);
+   line-height: 1.85;
+}
+
+.bio {
+   align-self: end;
 }
 
 .project-title {
@@ -85,16 +94,15 @@ h3, p, figcaption {
 }
 
 .jp, .jp * {
-   font-size: var(--base-font-size);
+   font-size: var(--jp-base-font-size);
    font-family: $jp-base-font;
    font-weight: 400;
    letter-spacing: -.03em;
-   line-height: 1.6;
+   line-height: 1.85;
 }
 
 .en, .en * {
-   font-size: calc(11px + -1 * (100vw - 480px) / 520);
-   font-family: $en-base-font;
+   font-size: var(--en-base-font-size);
    font-weight: 400;
    line-height: 1.6;
 }
@@ -119,7 +127,7 @@ h3, p, figcaption {
 
 @include mq(xl) {
    :root {
-      --base-font-size: 11px;
+      --jp-base-font-size: 11px;
    }
    .footer, time, .list--head li {
       font-size: 0.625vw;
@@ -130,10 +138,10 @@ h3, p, figcaption {
          font-size: 0.625vw;
       }
    }
-   .jp {
-      font-size: 0.78125vw;
-      * {
-         font-size: 0.78125vw;
-      }
-   }
+   // .jp {
+   //    font-size: 0.78125vw;
+   //    * {
+   //       font-size: 0.78125vw;
+   //    }
+   // }
 }

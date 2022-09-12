@@ -6,19 +6,13 @@
 }
 
 .project-dot {
-   line-height: 1;
    display: flex;
    flex-direction: row;
    align-items: center;
    margin-bottom: 2rem;
    &::before {
-      content: "";
-      display: block;
-      width: 1.4em;
+      content: "●";
       margin-right: 0.4rem;
-      height: 1.4em;
-      background: black;
-      border-radius: 50%;
    }
 }
 
@@ -56,6 +50,18 @@
          margin-top: 2rem;
       }
    }
+}
+
+.first-2 {
+   grid-column: 1 / span 2;
+}
+
+.middle-2 {
+   grid-column: 3 / span 2;
+}
+
+.last-2 {
+   grid-column: 5 / span 2;
 }
 
 .para {
@@ -117,8 +123,7 @@ figcaption {
             align-items: flex-start;
             flex-shrink: 1;
             gap: var(--gutter);
-
-            div {
+            & > * {
                width: 50%;
             }
          }
@@ -126,22 +131,17 @@ figcaption {
    }
 
    .project-description {
-      margin-right: calc(25% + var(--gap));
-      display: flex;
-      flex-direction: row;
+      // margin-right: calc(25% + var(--gap));
+      // display: flex;
+      // flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
       gap: var(--gutter);
       p {
          flex: 1;
          &:last-of-type {
             margin-top: 0;
          }
-      }
-   }
-
-   .para {
-      .project-description {
-         margin-right: 0;
-         margin-left: calc(25% + var(--gap));
       }
    }
    img {
