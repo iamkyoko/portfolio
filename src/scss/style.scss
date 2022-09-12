@@ -30,23 +30,19 @@ img {
    height: 100%;
 }
 
-ul,
-li {
+ul, li {
    list-style: none;
 }
 
 a {
    text-decoration: none;
    cursor: pointer;
-
    &:visited {
       color: inherit;
    }
 }
 
-::-moz-selection,
-::selection,
-::-moz-selection {
+::-moz-selection, ::selection, ::-moz-selection {
    color: white;
    background: black;
 }
@@ -55,14 +51,13 @@ a {
    display: none;
 }
 
-html,
-body {
+html, body {
    position: relative;
    width: 100%;
    min-width: 320px;
    min-height: 100vh;
    font-size: 62.5%;
-   font-family: "Orkney", sans-serif;
+   font-family: $jp-base-font;
    font-weight: 400;
    color: #000;
    background-color: #FFA360;
@@ -86,7 +81,6 @@ time,
 }
 
 .list--list li {
-
    &::before,
    &::after {
       font-size: 9px;
@@ -117,7 +111,6 @@ time,
    }
 
    .list--list li {
-
       &::before,
       &::after {
          font-size: 8px;
@@ -531,6 +524,12 @@ a {
    }
    .max-width {
       max-width: 75%;
+   }
+}
+
+@include mq(xl) {
+   .max-width {
+      max-width: 104rem;
    }
 }
 

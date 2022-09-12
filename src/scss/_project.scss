@@ -71,23 +71,19 @@
    grid-template-columns: 1fr;
    position: relative;
    margin: calc(var(--gap) * -1);
-
    figure {
       height: calc((100vw - var(--gutter) * 2) / 1.618);
       background: black;
       margin: var(--gap);
       padding: 10%;
       overflow: hidden;
-
       &.h0 {
          height: auto !important;
       }
-
       &.p0 {
          padding: 0;
       }
    }
-
    .spacer-2 {
       display: none;
    }
@@ -100,6 +96,10 @@ img {
    }
 }
 
+figure + figure {
+   margin-top: 8rem;
+}
+
 figcaption {
    padding-left: calc(50% + var(--gap));
    padding-top: var(--gap);
@@ -109,10 +109,8 @@ figcaption {
    .info {
       grid-auto-columns: min-content;
       padding-left: 50%;
-
       &.new {
          padding-left: 0;
-
          .project-intro {
             display: flex;
             flex-direction: row;
@@ -151,26 +149,25 @@ figcaption {
          width: 100%;
          margin-left: 0;
       }
+      &.smaller {
+         padding: 0 10%;
+      }
    }
    .image {
       grid-template-columns: 1fr;
-
       figure {
          &.c-1 {
             height: calc((100vw - var(--gutter) * 2) / 1.618);
          }
-
          &.c-2 {
             height: calc(((100vw - var(--gutter) * 2) - var(--gap)) / 2 / 1.618);
          }
       }
-
       .spacer-2 {
          display: block;
          grid-column: auto / span 3;
       }
    }
-
    figcaption {
       margin: 0 auto;
    }
@@ -179,11 +176,5 @@ figcaption {
 @include mq(lg) {
    .project-title {
       padding-left: calc(25% + var(--gap));
-   }
-}
-
-@include mq(xl) {
-   .info {
-      max-width: 104rem;
    }
 }

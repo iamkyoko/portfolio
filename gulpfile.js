@@ -150,6 +150,4 @@ gulp.task('watch', (done) => {
 // gulp
 
 gulp.task('default',
-   gulp.series('sass', 'image', 'inc', 'work', 'index', 'font', 'js', function(done){
-      done();
-}));
+   gulp.series('sass', 'image', 'inc', 'work', 'index', 'font', 'js'));
