@@ -9,6 +9,10 @@
    --column: 6;
 }
 
+.white {
+   background-color: white;
+}
+
 * {
    padding: 0;
    margin: 0;
@@ -41,7 +45,7 @@ a {
    }
 }
 
-::-moz-selection, ::selection, ::-moz-selection {
+::selection {
    color: white;
    background: black;
 }
@@ -139,10 +143,9 @@ a {
    position: fixed;
    top: 0;
    width: 100%;
-   padding: var(--gutter);
+   padding: var(--alley);
    z-index: 999;
    pointer-events: none;
-
    .header__wrap {
       height: 10px;
       display: flex;
@@ -150,7 +153,6 @@ a {
       align-items: center;
       flex-flow: row-reverse;
       margin: auto;
-
       li {
          pointer-events: auto;
       }
@@ -167,18 +169,15 @@ a {
 }
 
 .header--link {
-   font-family: "Mazius", serif;
    display: inline-block;
+   margin-right: auto;
    // margin: var(--gutter) var(--gutter) 0;
    overflow: hidden;
-
    a {
       display: flex;
       align-items: center;
-      opacity: .5;
-
       .arrow {
-         transform: rotate(0);
+         transform: rotate(45deg);
       }
    }
 }
@@ -189,7 +188,6 @@ a {
    left: 0;
    width: 100%;
    padding: 0 var(--gutter) var(--gutter);
-
    .footer__wrap {
       letter-spacing: -.03em;
       height: 10px;
@@ -230,7 +228,6 @@ a {
 .title {
    align-self: center;
    margin: calc(var(--gutter) * 2 + 1rem) 0;
-   font-size: 19.5vw;
    display: flex;
 
    .title--title {
@@ -459,7 +456,6 @@ a {
 
    .title {
       grid-column: 1 / span 6;
-      font-size: 18.8vw;
    }
 
    .bio {
@@ -505,6 +501,19 @@ a {
       margin-right: auto;
       margin-left: auto;
    }
+   .header--link {
+      a {
+         .arrow {
+            transition: transform .5s;
+         }
+         &:hover {
+            .arrow {
+               transform: rotate(0);
+               transition: transform .5s;
+            }
+         }
+      }
+   }
 }
 
 @include mq(lg) {
@@ -513,13 +522,13 @@ a {
       --alley: 6.25vw;
       --gap: 1.5625vw;
    }
-   .max-width {
+   .max-width, figcaption {
       max-width: 75%;
    }
 }
 
 @include mq(xl) {
-   .max-width {
+   .max-width, figcaption {
       max-width: 104rem;
    }
 }

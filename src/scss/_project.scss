@@ -45,9 +45,8 @@
 .project-description {
    p {
       margin: 0;
-
       &:last-of-type {
-         margin-top: 2rem;
+         margin-top: 4em;
       }
    }
 }
@@ -107,7 +106,6 @@ figure + figure {
 }
 
 figcaption {
-   padding-left: calc(50% + var(--gap));
    padding-top: var(--gap);
 }
 
@@ -130,7 +128,8 @@ figcaption {
       }
    }
 
-   .project-description {
+   .project-description,
+   figcaption {
       // margin-right: calc(25% + var(--gap));
       // display: flex;
       // flex-direction: row;

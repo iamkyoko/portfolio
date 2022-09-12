@@ -6,7 +6,7 @@
 
 		<div class="project-intro">
 
-			<p class="project-dot jp">モバイルアプリ開発・改善</p>
+			<p class="project-dot jp">モバイルアプリ「FACY」</p>
 			<div class="project-role-year">
 				<p>UI / UX Designer</p>
 				<time>2021</time>
@@ -35,27 +35,25 @@
       <h2 class="section-title">
 			Managing Design System.
       </h2>
-      <div class="info--desc project-description">
-			<p class="jp middle-2">
+      <div class="project-description">
+			<p class="jp">
             プロジェクトにアサインされてからすぐ、フォントサイズからカラーコードまでそもそもデザインと違う、各OS間でもそれぞれちょっとずつ違うということに気づき愕然。その状況を打開すべく、iOSデザイン制作とともに、長らく放置されていたAndroidデザイン制作にも着手。
             <br>
             <br>
             各プラットフォームそれぞれにデザインシステムの構築、また両者間共通のものを用意しつつ、すでに実装されている部分の確認・擦り合わせを行い、少しずつデザインと実際のビルドとの間の差を埋めていきました。
 			</p>
-			<p class="last-2">
-            <span>
-					I reinvented the look of Japanese singer <i>Ayano Mashiro</i>'s website.
-				</span>
-				<span>
-					I came at it with a "less is more" approach, to keep all of the information an photos looking tidy. Keeping the look minimalistic really helped the beautiful photos stand out to their full potential.
-				</span>
+			<p>
+            I reinvented the look of Japanese singer <i>Ayano Mashiro</i>'s website.<br><br>
+            I came at it with a "less is more" approach, to keep all of the information an photos looking tidy. Keeping the look minimalistic really helped the beautiful photos stand out to their full potential.
 			</p>
 		</div>
    </section>
 
    <figure>
       <img src="../image/app_design_system.png">
-      <figcaption>上から順にiOS、Android、両者共通のデザインコンポーネントをまとめたもの。</figcaption>
+      <figcaption>
+         <p>上から順にiOS、Android、両者共通のデザインコンポーネントをまとめたもの。</p>
+      </figcaption>
    </figure>
 
    <section class="para max-width">
@@ -63,27 +61,25 @@
       <h2 class="section-title">
 			Oboarding Flow.
       </h2>
-      <div class="info--desc project-description">
-			<p class="jp">
+      <div class="project-description">
+         <p class="jp">
             プロジェクトにアサインされてからすぐ、フォントサイズからカラーコードまでそもそもデザインと違う、各OS間でもそれぞれちょっとずつ違うということに気づき愕然。その状況を打開すべく、iOSデザイン制作とともに、長らく放置されていたAndroidデザイン制作にも着手。
             <br>
             <br>
             各プラットフォームそれぞれにデザインシステムの構築、また両者間共通のものを用意しつつ、すでに実装されている部分の確認・擦り合わせを行い、少しずつデザインと実際のビルドとの間の差を埋めていきました。
 			</p>
-			<p class="en">
-      			<span>
-					I reinvented the look of Japanese singer <i>Ayano Mashiro</i>'s website.
-				</span>
-				<span>
-					I came at it with a "less is more" approach, to keep all of the information an photos looking tidy. Keeping the look minimalistic really helped the beautiful photos stand out to their full potential.
-				</span>
+			<p>
+      		I reinvented the look of Japanese singer <i>Ayano Mashiro</i>'s website.
+				I came at it with a "less is more" approach, to keep all of the information an photos looking tidy. Keeping the look minimalistic really helped the beautiful photos stand out to their full potential.
 			</p>
 		</div>
    </section>
 
    <figure>
       <img class="full" src="../image/app_onboarding.png">
-      <figcaption>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</figcaption>
+      <figcaption>
+         <p>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</p>
+      </figcaption>
    </figure>
 
    <section class="para max-width">
@@ -91,14 +87,14 @@
       <h2 class="section-title">
 			Improve Top Page.
       </h2>
-      <div class="info--desc project-description">
+      <div class="project-description">
        <p class="jp">
             プロジェクトにアサインされてからすぐ、フォントサイズからカラーコードまでそもそもデザインと違う、各OS間でもそれぞれちょっとずつ違うということに気づき愕然。その状況を打開すべく、iOSデザイン制作とともに、長らく放置されていたAndroidデザイン制作にも着手。
             <br>
             <br>
             各プラットフォームそれぞれにデザインシステムの構築、また両者間共通のものを用意しつつ、すでに実装されている部分の確認・擦り合わせを行い、少しずつデザインと実際のビルドとの間の差を埋めていきました。
 			</p>
-			<p class="en">
+			<p>
       			<span>
 					I reinvented the look of Japanese singer <i>Ayano Mashiro</i>'s website.
 				</span>
@@ -111,7 +107,9 @@
 
    <figure>
       <img class="full" src="../image/app_curation.png">
-      <figcaption class="max-width">以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</figcaption>
+      <figcaption>
+         <p>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</p>
+      </figcaption>
    </figure>
 
    <section class="para max-width">
@@ -149,15 +147,6 @@
       <img src="../image/app_ideation.png">
    </figure>
 
-
-  	<section class="image">
-		<figure class="c-1">
-			<img src="../image/app_Curation.png"></figure>
-		<figure class="c-2">
-			<img src="../../project__trans02.jpg"></figure>
-		<figure class="c-1 p0">
-			<img src="../../project__trans02.jpg"></figure>
-	</section>
 </div>
 
 <?php include (__DIR__ . "/../inc/footer.php");

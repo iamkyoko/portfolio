@@ -57,12 +57,6 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::b
    cursor: default;
 }
 
-.kyoko {
-   font-family: $en-base-font;
-   font-weight: 700;
-   font-size: 12px;
-}
-
 h3, p, time {
    font-size: var(--en-base-font-size);
    line-height: 1.5;
@@ -72,6 +66,17 @@ figcaption {
    font-family: $jp-base-font;
    font-size: var(--jp-base-font-size);
    line-height: 1.85;
+}
+
+.kyoko {
+   font-size: 1.6rem;
+}
+
+.header--link {
+   a {
+      font-family: $en-base-font;
+      font-size: 1.6rem;
+   }
 }
 
 .bio {
@@ -107,9 +112,16 @@ figcaption {
    line-height: 1.6;
 }
 
+.title {
+   font-size: 19.5vw;
+}
+
 @include mq(sm) {
    :root {
       --head-font-size: 8.333vw;
+   }
+   .title {
+      font-size: 18.8vw;
    }
 }
 
@@ -129,12 +141,14 @@ figcaption {
    :root {
       --jp-base-font-size: 11px;
    }
+   .title {
+      font-size: 20rem;
+   }
    .footer, time, .list--head li {
       font-size: 0.625vw;
    }
    .list--list li {
-      &::before,
-      &::after {
+      &::before, &::after {
          font-size: 0.625vw;
       }
    }
