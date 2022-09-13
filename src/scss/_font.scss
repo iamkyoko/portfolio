@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:500&subset=japanese");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+JP:400&subset=japanese");
+
+@font-face {
+   font-family: "GT Walsheim";
+   font-style: normal;
+   font-weight: 400;
+   src: url("../font/GTWalsheimPro-Regular.woff") format("woff");
+}
 
 @font-face {
    font-family: "GT Walsheim";
@@ -6,7 +13,14 @@
    font-weight: 500;
    src: url("../font/GTWalsheimPro-Medium.woff") format("woff");
 }
-  
+
+@font-face {
+   font-family: "GT Walsheim";
+   font-style: italic;
+   font-weight: 400;
+   src: url("../font/GTWalsheimPro-RegularOblique.woff") format("woff");
+}
+
 @font-face {
    font-family: "GT Walsheim";
    font-style: italic;
@@ -27,7 +41,7 @@ $en-base-font: "GT Walsheim";
 
 :root {
    --jp-base-font-size: calc(11px + 1 * (100vw - 320px) / 960);
-   --jp-small-font-size: calc(8px + 1 * (100vw - 320px) / 960);
+   --jp-small-font-size: calc(11px - 2 * (100vw - 320px) / 960);
    --en-base-font-size: calc(12.5px + 1 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
 }
@@ -50,13 +64,14 @@ a {
 
 h3, p, time {
    font-size: var(--en-base-font-size);
-   line-height: 1.79em;
+   font-weight: 500;
+   line-height: 1.8em;
 }
 
 figcaption {
    p {
       font-family: $jp-base-font;
-      font-size: var(--jp-base-font-size);
+      font-size: var(--jp-small-font-size);
    }
 }
 
@@ -140,11 +155,6 @@ figcaption {
 @include mq(md) {
    :root {
       --head-font-size: 6rem;
-   }
-   figcaption {
-      p {
-         font-size: var(--jp-small-font-size);
-      }
    }
    a {
       font-size: 4.8rem;
