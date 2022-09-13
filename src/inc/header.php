@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <meta http-equiv="Content-Language" content="ja">
+<meta name="robots" content="noindex"/>
 <meta name="google" content="notranslate">
 <head>
    <meta charset="UTF-8">
