@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::b
 
 a {
    font-size: 8vw;
-   letter-spacing: -.03em;
+   letter-spacing: -.04em;
 }
 
 h3, p, time {
@@ -75,13 +75,13 @@ figcaption {
 }
 
 .kyoko {
-   font-size: var(--en-base-font-size);
+   font-size: 2rem;
 }
 
 .header--link {
    a {
       font-family: $en-base-font;
-      font-size: var(--en-base-font-size);
+      font-size: 2rem;
    }
 }
 
@@ -119,7 +119,7 @@ figcaption {
 .section-title {
    font-size: var(--head-font-size);
    line-height: 1.2;
-   letter-spacing: -.025em;
+   letter-spacing: -.03em;
 }
 
 .jp, .jp * {

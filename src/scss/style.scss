@@ -40,6 +40,10 @@ ul, li {
 a {
    text-decoration: none;
    cursor: pointer;
+   margin: -.13em 0;
+   transition-delay: .1s;
+   transition-timing-function: ease-out;
+   transition: font-size .5s;
    &:visited {
       color: inherit;
    }
@@ -82,13 +86,6 @@ svg {
    transition: padding .5s, margin .5s, grid-column .5s, width .5s, height .5s;
 }
 
-a {
-   margin: -.13em 0;
-   transition-delay: .1s;
-   transition-timing-function: ease-out;
-   transition: font-size .5s;
-}
-
 .header {
    position: fixed;
    top: 0;
@@ -97,7 +94,6 @@ a {
    z-index: 999;
    pointer-events: none;
    .header__wrap {
-      height: 10px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -280,7 +276,6 @@ a {
       justify-content: center;
       transform-origin: right;
       transform: rotate(90deg) translateX(50%) translateY(50%);
-
       span {
          display: block;
          width: 2em;
@@ -294,7 +289,7 @@ a {
    align-self: center;
    margin: calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2 + 1rem);
    counter-reset: num;
-   gap: 2.4em;
+   gap: 3.2em;
    li {
       position: relative;
       display: flex;
