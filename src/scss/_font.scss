@@ -21,29 +21,17 @@
    src: url("../font/GTWalsheimPro-Bold.woff") format("woff");
 }
 
-@font-face {
-   font-family: "Mazius";
-   font-style: normal;
-   font-weight: 400;
-   src: url("../font/MaziusDisplayRegular.woff") format("woff");
-}
-
-@font-face {
-    font-family: "PP Eiko Italic";
-    font-style: italic;
-    font-weight: 100;
-    src: url("../font/PPEiko-LightItalic.woff") format("woff");
-}
-
 $jp-base-font: "Noto Sans JP";
 $en-base-font: "GT Walsheim";
 $en-head-font: "PP Eiko Italic";
 
 
 :root {
-   --jp-base-font-size: calc(11px + 2 * (100vw - 320px) / 960);
-   --en-base-font-size: calc(13px + 2 * (100vw - 320px) / 960);
+   --jp-base-font-size: calc(10.5px + 1 * (100vw - 320px) / 960);
+   --jp-small-font-size: calc(8px + 1 * (100vw - 320px) / 960);
+   --en-base-font-size: calc(12px + 1 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
+   --test: #FFF;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::before, ::after {
@@ -64,12 +52,15 @@ a{
 
 h3, p, time {
    font-size: var(--en-base-font-size);
-   line-height: 1.86em;
+   line-height: 1.78em;
 }
 
 figcaption {
-   font-family: $jp-base-font;
-   font-size: var(--jp-base-font-size);
+   p {
+      font-family: $jp-base-font;
+      font-size: var(--jp-small-font-size);
+      line-height: 1.6;
+   }
 }
 
 .kyoko {
@@ -88,10 +79,9 @@ figcaption {
 }
 
 .list--list li {
-   &::before,
-   &::after {
+   &::before, &::after {
       font-family: $en-base-font;
-      font-size: var(--en-base-font-size);
+      font-size: var(--jp-base-font-size);
       white-space: nowrap;
    }
 }
@@ -111,8 +101,8 @@ figcaption {
 }
 
 .section-title {
-   // font-family: $en-head-font;
-   font-size: 4rem;
+   font-size: 3.2rem;
+   line-height: 1.2;
 }
 
 .jp, .jp * {

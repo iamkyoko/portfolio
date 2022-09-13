@@ -9,7 +9,7 @@ $Orange: #FF611D;
    --gutter: 8vw;
    --alley: var(--gutter);
    --gap: 3.2vw;
-   --content-space: 26.6666666667vw;
+   --content-space: 20.833333333vw;
    --column: 6;
 }
 
@@ -295,7 +295,7 @@ a {
    align-self: center;
    margin: calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2 + 1rem);
    counter-reset: num;
-   gap: 4em;
+   gap: 2.4em;
    li {
       position: relative;
       display: flex;
@@ -306,6 +306,7 @@ a {
          width: 1.2em;
          align-self: flex-end;
          position: absolute;
+         padding-bottom: 0.2em;
       }
       &:nth-of-type(odd)::before {
          counter-increment: num;
