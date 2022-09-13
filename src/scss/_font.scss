@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::b
 }
 
 a {
-   font-size: 8vw;
+   font-size: 6.666vw;
    letter-spacing: -.04em;
 }
 
@@ -72,6 +72,19 @@ figcaption {
       font-family: $jp-base-font;
       font-size: var(--jp-small-font-size);
    }
+}
+
+.jp, .jp * {
+   font-size: var(--jp-base-font-size);
+   font-family: $jp-base-font;
+   font-weight: 500;
+   letter-spacing: -.03em;
+   line-height: 2.016em;
+}
+
+.en, .en * {
+   font-size: var(--en-base-font-size);
+   font-weight: 400;
 }
 
 .kyoko {
@@ -95,6 +108,15 @@ figcaption {
       font-size: var(--jp-base-font-size);
       white-space: nowrap;
    }
+}
+
+.title {
+   font-size: 17.333333333vw;
+}
+
+.title--year {
+   font-size: .45em;
+   letter-spacing: -.04em;
 }
 
 .bio {
@@ -122,29 +144,12 @@ figcaption {
    letter-spacing: -.03em;
 }
 
-.jp, .jp * {
-   font-size: var(--jp-base-font-size);
-   font-family: $jp-base-font;
-   font-weight: 500;
-   letter-spacing: -.03em;
-   line-height: 2.016em;
-}
-
-.en, .en * {
-   font-size: var(--en-base-font-size);
-   font-weight: 400;
-}
-
-.title {
-   font-size: 19.5vw;
-}
-
 @include mq(sm) {
    :root {
       --head-font-size: 8.333vw;
    }
    .title {
-      font-size: 18.8vw;
+      font-size: 16.666666666vw;
    }
    a {
       font-size: 6.25vw;
@@ -154,6 +159,11 @@ figcaption {
 @include mq(md) {
    :root {
       --head-font-size: 6rem;
+   }
+   figcaption {
+      p {
+         line-height: 2.4em;
+      }
    }
    a {
       font-size: 4.8rem;

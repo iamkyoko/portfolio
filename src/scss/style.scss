@@ -222,11 +222,8 @@ svg {
       grid-row: 2;
       grid-column: 2;
       align-self: flex-end;
-      font-size: .3em;
-      letter-spacing: -.04em;
       display: flex;
-      margin-left: 1.1em;
-
+      margin-left: 1em;
       span {
          display: block;
          margin-bottom: -.2em;
@@ -289,7 +286,7 @@ svg {
    align-self: center;
    margin: calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2 + 1rem);
    counter-reset: num;
-   gap: 3.2em;
+   gap: 2.8em;
    li {
       position: relative;
       display: flex;
@@ -374,7 +371,6 @@ svg {
    }
    .grid {
       grid-template-columns: repeat(6, 1fr);
-      max-width: 90%;
    }
 
    .title {
@@ -411,6 +407,10 @@ svg {
       --alley: 8.33333vw;
       --gap: 2.08333vw;
       --content-space: 10vw;
+   }
+   .grid {
+      max-width: 90%;
+      margin: 0 auto;
    }
    .dots {
       div {
