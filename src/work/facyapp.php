@@ -147,15 +147,15 @@
          Onboarding New Users.
       </h2>
       <div class="project-description">
-       <p class="jp">
-         想定したアプリの使い方（店頭受け取りでのオーダー）がユーザーに浸透していない・リピートユーザーが生まれていないという課題から、アプリの新規ユーザーに向けて、よりスムーズな理解を促すためオンボーディング画面を導入、改善を実施しました。
-         <br><br>
-         第1弾ではアプリの使い方・メリットをわかりやすく提示。第2弾では内容をより端的に、かつ、ほぼ使われていなかったトップページフィードの設定（ショッピングしたいエリア・ジェンダーの設定）をフロー内に統合することで、パーソナルな体験ができることをユーザー側に示唆すると共に、当初スコープとして検討されていたフィード設定のチュートリアルにかかる工数をカット。
+         <p class="jp">
+            想定したアプリの使い方（店頭受け取りでのオーダー）がユーザーに浸透していない・リピートユーザーが生まれていないという課題から、アプリの新規ユーザーに向けて、よりスムーズな理解を促すためオンボーディング画面を導入、改善を実施しました。
+            <br><br>
+            第1弾ではアプリの使い方・メリットをわかりやすく提示。第2弾では内容をより端的に、かつ、ほぼ使われていなかったトップページフィードの設定（ショッピングしたいエリア・ジェンダーの設定）をフロー内に統合することで、パーソナルな体験ができることをユーザー側に示唆すると共に、当初スコープとして検討されていたフィード設定のチュートリアルにかかる工数をカット。
 			</p>
 			<p>
-            We were facing issues with people using the app in unintended ways, and users abandoning the platform. One solution we came up with was to create a brand new onboarding flow for new users. We also made a 2nd version to improve.
+            We were facing issues with people using the app in unintended ways, and users abandoning the platform. One solution we came up with was to create a brand new onboarding flow for new users. We then improved upon that flow by releasing a second version.
             <br><br>
-            In the 1st version, we detailed our benefits and how to use them. When we developed the second iteration of our onboarding flow, we shortened and simplified the content. I also transferred the Feed Settings (Area and Gender preferences) questions, which went largely unnoticed before, into the onboarding flow. Doing so helped users realize the content they were seeing was based on their personal preferences, and it saved the engineering costs of developing tutorials on how to select preferred areas. 
+            In the 1st version, we underscored the advantages of using our application. Then in the second version, we shortened and simplified the content. I also transferred the Feed Settings questions (area and gender preferences), which went largely unnoticed before, into the onboarding flow. Doing so helped users realize the content they were seeing was based on their personal preferences, and it saved the engineering costs of developing tutorials on how to select preferred areas.
 			</p>
 		</div>
    </section>
