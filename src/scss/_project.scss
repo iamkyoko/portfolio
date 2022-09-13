@@ -106,7 +106,7 @@ figure + figure {
 }
 
 figcaption {
-   padding-top: 2em;
+   padding-top: var(--gap);
 }
 
 @include mq(md) {

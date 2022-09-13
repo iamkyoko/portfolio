@@ -41,7 +41,7 @@ $en-base-font: "GT Walsheim";
 
 :root {
    --jp-base-font-size: calc(11px + 1 * (100vw - 320px) / 960);
-   --jp-small-font-size: calc(11px + 0.5 * (100vw - 320px) / 960);
+   --jp-small-font-size: calc(11px + 0.75 * (100vw - 320px) / 960);
    --en-base-font-size: calc(12.5px + 1 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
 }

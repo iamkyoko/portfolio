@@ -10,8 +10,9 @@
       $path = pathinfo($_SERVER["REQUEST_URI"]);
       $key = $path["filename"];
       $keys = array (
-         "facymedia" => "FACY MEDIA",
          "facyapp"   => "FACY APP",
+         "facyadmin" => "FACY SHOP ADMIN",
+         "facymedia" => "FACY MEDIA",
          "nord"      => "Cucina Nord Ibaraki",
          "ined"      => "INÉD",
          "ayano"     => "Ayano Mashiro",

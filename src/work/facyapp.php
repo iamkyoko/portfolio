@@ -32,18 +32,19 @@
       <img src="../image/app_mockup.webp">
    </figure>
 
+
    <!-- Improving the Engineering Flow. -->
 
    <section class="para max-width">
       <p class="project-dot jp">開発フローの改善</p>
       <h2 class="section-title">
-      Improving the Engineering Flow.
+         Improving the Engineering Flow.
       </h2>
       <div class="project-description">
 			<p class="jp">
             一番最初にチーム内に働きかけたのは、開発後のデザインチェックについてでした。「デザインツールと実機とでは見え方が違う。鏡に写るあなたとあなたのパスポート写真とが別人に見えるのと同じ。」とエンジニア陣を説得しフローを確立。
             <br><br>
-            お気に入り機能、検索フィルターの追加、関連商品の表示など、新機能の開発を検討する際には、事前に幅広いケーススタディ・情報収集を行い、それらをドキュメントとして共有。常に「同じ言語」でのコミュニケーションを常に意識し、客観的な視点に基づく意思決定のフローを目指しました
+            お気に入り機能、検索フィルターの追加、関連商品の表示など、新機能の開発を検討する際には、事前に幅広いケーススタディ・情報収集を行い、それらをドキュメントとして共有。常に「同じ言語」でのコミュニケーションを常に意識し、客観的な視点に基づく意思決定のフローを目指しました。
          </p>
 			<p>
             One of the first things I did as a UI designer on the app project was to ensure there would be a “design check” phase at the end of the engineering flow. I managed to convince the engineers to add this step by telling them, “Not everything looks as beautiful on an actual device as it does in a design tool. Think of how amazing you look in the mirror, then look at your passport picture. It's the same person, but a very different look.” 
@@ -105,7 +106,9 @@
       <figure>
          <img src="../image/app_design_system.webp">
          <figcaption>
-            <p>上から順にiOS、Android、両者共通のデザインコンポーネントをまとめたもの。</p>
+            <p>
+               上から順にiOS、Android、両者共通のデザインコンポーネントをまとめたもの。
+            </p>
          </figcaption>
       </figure>
 
@@ -134,7 +137,9 @@
    <figure>
       <img src="../image/app_curation.webp">
       <figcaption>
-         <p>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</p>
+         <p>
+            以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。
+         </p>
       </figcaption>
    </figure>
 
@@ -163,7 +168,9 @@
    <figure>
       <img src="../image/app_onboarding.webp">
       <figcaption>
-         <p>上から第1弾、第2弾。アプリの使用開始のための設定をよりスムーズにすべく、質問は身近で親しみやすい言葉使いを意識。</p>
+         <p>
+            上から第1弾、第2弾。アプリの使用開始のための設定をよりスムーズにすべく、質問は身近で親しみやすい言葉使いを意識。
+         </p>
       </figcaption>
    </figure>
 
