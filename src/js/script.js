@@ -181,6 +181,7 @@ $(document).ready(function () {
       });
 
       $(".footer").css("position", "relative"),
+      $("figcaption p").addClass("jp"),
       Column();
       FullWidthImage();
 
