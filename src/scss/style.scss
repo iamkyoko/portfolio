@@ -2,15 +2,15 @@
 @import "font";
 @import "project";
 
+$Beige: #F1DFC4;
+$Orange: #FF611D;
+
 :root {
    --gutter: 8vw;
    --alley: var(--gutter);
    --gap: 3.2vw;
+   --content-space: 26.6666666667vw;
    --column: 6;
-}
-
-.white {
-   background-color: white;
 }
 
 * {
@@ -63,7 +63,8 @@ html, body {
    font-family: $en-base-font;
    font-weight: 400;
    color: #000;
-   background-color: #FFA360;
+   background-color: $Orange;
+   // background-color: #FFA360;
    line-height: 1;
    text-rendering: optimizeLegibility;
    scrollbar-width: none;
@@ -71,54 +72,7 @@ html, body {
 }
 
 a {
-   font-family: "Mazius", serif;
-   font-size: 8vw;
-   letter-spacing: -.03em;
    margin: -.13em 0;
-}
-
-.footer,
-time,
-.list--head li {
-   font-size: 9px;
-}
-
-.list--list li {
-   &::before,
-   &::after {
-      font-size: 9px;
-   }
-}
-
-@media (min-width: 480px) {
-   .footer,
-   time,
-   .list--head li {
-      font-size: calc(9px + -1 * (100vw - 480px) / 520);
-   }
-
-   .list--list li {
-
-      &::before,
-      &::after {
-         font-size: calc(9px + -1 * (100vw - 480px) / 520);
-      }
-   }
-}
-
-@media (min-width: 1000px) {
-   .footer,
-   time,
-   .list--head li {
-      font-size: 8px;
-   }
-
-   .list--list li {
-      &::before,
-      &::after {
-         font-size: 8px;
-      }
-   }
 }
 
 svg {
@@ -231,7 +185,7 @@ a {
    display: flex;
 
    .title--title {
-      font-family: "Mazius", serif;
+      // font-family: "Mazius", serif;
       letter-spacing: -.03em;
       display: flex;
       margin-top: -.1em;
@@ -242,11 +196,12 @@ a {
          display: block;
 
          &:nth-of-type(1) {
-            margin-left: -.06em;
+            margin-left: -.02em;
          }
 
          &:nth-of-type(2) {
-            padding-right: .05em;
+            padding-right: .04em;
+            margin-left: -0.03em;
          }
 
          &:nth-of-type(3) {
@@ -276,7 +231,7 @@ a {
       grid-column: 2;
       align-self: flex-end;
       font-size: .3em;
-      letter-spacing: -.1em;
+      letter-spacing: -.04em;
       display: flex;
       margin-left: 1.1em;
 
@@ -338,44 +293,35 @@ a {
 }
 
 .list--list {
+   display: flex;
+   flex-direction: column;
    align-self: center;
    margin: calc(var(--gutter) * 2) 0 calc(var(--gutter) * 2 + 1rem);
    counter-reset: num;
-
+   gap: 4em;
    li {
       position: relative;
       display: flex;
       align-items: center;
-
       &::before,
       &::after {
          display: none;
-         font-size: 10px;
-         white-space: nowrap;
          width: 1.2em;
          align-self: flex-end;
          position: absolute;
       }
-
       &:nth-of-type(odd)::before {
          counter-increment: num;
          content: counter(num, decimal-leading-zero);
          left: -2em;
       }
-
       &:nth-of-type(even)::after {
          counter-increment: num;
          content: counter(num, decimal-leading-zero);
          right: -2em;
       }
-
-      &:not(:first-of-type) {
-         margin-top: 2rem;
-      }
-
       a {
          position: relative;
-
          time {
             display: none;
             position: absolute;
@@ -393,11 +339,10 @@ a {
    top: 0;
    left: 0;
    pointer-events: none;
-
    div {
       width: 90px;
       height: 90px;
-      background-color: #fff;
+      background-color: $Beige;
       border-radius: 50%;
       position: absolute;
 
@@ -435,12 +380,9 @@ a {
       --gutter: 6.66666666667vw;
       --gap: 2.5vw;
    }
-   a {
-      font-size: 6.25vw;
-   }
-
    .grid {
       grid-template-columns: repeat(6, 1fr);
+      max-width: 90%;
    }
 
    .title {
@@ -462,8 +404,6 @@ a {
    }
 
    .list--list {
-      display: flex;
-      flex-direction: column;
       align-items: center;
       li {
          &::before, &::after {
@@ -478,9 +418,13 @@ a {
       --gutter: 6.25vw;
       --alley: 8.33333vw;
       --gap: 2.08333vw;
+      --content-space: 10vw;
    }
-   a {
-      font-size: 4vw;
+   .dots {
+      div {
+         width: 12.5vw;
+         height: 12.5vw;
+      }
    }
    .bio {
       grid-column: 4 / span 2;
@@ -514,11 +458,8 @@ a {
    .max-width, figcaption {
       max-width: 75%;
    }
-}
-
-@include mq(xl) {
-   .max-width, figcaption {
-      max-width: 104rem;
+   .bio {
+      grid-column: 5 / span 2;
    }
 }
 

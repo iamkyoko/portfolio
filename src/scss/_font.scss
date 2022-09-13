@@ -41,8 +41,8 @@ $en-head-font: "PP Eiko Italic";
 
 
 :root {
-   --jp-base-font-size: calc(11px + -1 * (100vw - 480px) / 800);;
-   --en-base-font-size: calc(13px + -1 * (100vw - 480px) / 800);
+   --jp-base-font-size: calc(11px + 2 * (100vw - 320px) / 960);
+   --en-base-font-size: calc(13px + 2 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
 }
 
@@ -57,25 +57,42 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a, b, sup, sub, time, figure, figcaption, ::b
    cursor: default;
 }
 
+a{
+   font-size: 8vw;
+   letter-spacing: -.03em;
+}
+
 h3, p, time {
    font-size: var(--en-base-font-size);
-   line-height: 1.55;
+   line-height: 1.86em;
 }
 
 figcaption {
    font-family: $jp-base-font;
    font-size: var(--jp-base-font-size);
-   line-height: 1.85;
 }
 
 .kyoko {
-   font-size: 1.6rem;
+   font-size: var(--en-base-font-size);
 }
 
 .header--link {
    a {
       font-family: $en-base-font;
-      font-size: 1.6rem;
+      font-size: var(--en-base-font-size);
+   }
+}
+
+.footer, time, .list--head li {
+   font-size: var(--jp-base-font-size);
+}
+
+.list--list li {
+   &::before,
+   &::after {
+      font-family: $en-base-font;
+      font-size: var(--en-base-font-size);
+      white-space: nowrap;
    }
 }
 
@@ -85,7 +102,7 @@ figcaption {
 
 .project-title {
    margin: 6rem 0;
-   font-family: $en-head-font;
+   // font-family: $en-head-font;
    font-size: var(--head-font-size);
    line-height: 1.2;
    text-align: right;
@@ -94,7 +111,7 @@ figcaption {
 }
 
 .section-title {
-   font-family: $en-head-font;
+   // font-family: $en-head-font;
    font-size: 4rem;
 }
 
@@ -103,13 +120,12 @@ figcaption {
    font-family: $jp-base-font;
    font-weight: 400;
    letter-spacing: -.03em;
-   line-height: 1.85;
+   line-height: 2.016em;
 }
 
 .en, .en * {
    font-size: var(--en-base-font-size);
    font-weight: 400;
-   line-height: 1.6;
 }
 
 .title {
@@ -123,11 +139,17 @@ figcaption {
    .title {
       font-size: 18.8vw;
    }
+   a {
+      font-size: 6.25vw;
+   }
 }
 
 @include mq(md) {
    :root {
       --head-font-size: 6rem;
+   }
+   a {
+      font-size: 4.8rem;
    }
 }
 
@@ -137,25 +159,8 @@ figcaption {
    }
 }
 
-@include mq(xl) {
-   :root {
-      --jp-base-font-size: 11px;
-   }
+@include mq(xxl) {
    .title {
-      font-size: 20rem;
+      font-size: 14.583333333vw;
    }
-   .footer, time, .list--head li {
-      font-size: 0.625vw;
-   }
-   .list--list li {
-      &::before, &::after {
-         font-size: 0.625vw;
-      }
-   }
-   // .jp {
-   //    font-size: 0.78125vw;
-   //    * {
-   //       font-size: 0.78125vw;
-   //    }
-   // }
 }

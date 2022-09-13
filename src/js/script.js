@@ -33,16 +33,16 @@ function Error() {
 }
 
 // Add max-width class to Title
-function Title() {
-   var vw = $(window).innerWidth();
-   if (vw >= xl) {
-      $(".grid").addClass("max-width")
-   } else {
-      $(".grid").hasClass("max-width")
-      ? $(".grid").removeClass("max-width")
-      : ""
-   }
-}
+// function Title() {
+//    var vw = $(window).innerWidth();
+//    if (vw >= xl) {
+//       $(".grid").addClass("max-width")
+//    } else {
+//       $(".grid").hasClass("max-width")
+//       ? $(".grid").removeClass("max-width")
+//       : ""
+//    }
+// }
 
 // Content Layout
 function Column() {
@@ -70,7 +70,7 @@ function Column() {
 function FullWidthImage() {
    var vw = $(window).innerWidth();
    if (vw <= md) {
-      $("figure img").addClass("full")
+      $("figure img:not(.small)").addClass("full")
    } else {
       $("figure img").hasClass("full")
          ? $("figure img").removeClass("full")
@@ -143,7 +143,6 @@ $(document).ready(function () {
    ) {
       // In Top Page
 
-      Title(),
       Height(),
       Dot(),
 
@@ -151,17 +150,6 @@ $(document).ready(function () {
          Height();
          Dot();
       })
-
-      var timer = false;
-      $(window).resize(function() {
-         if (timer !== false) {
-            clearTimeout(timer);
-         }
-         timer = setTimeout(function() {
-         // Action after resized
-         Title();
-         }, 200);
-      });
 
       var hash = location.hash;
 
@@ -192,7 +180,6 @@ $(document).ready(function () {
          }, 200);
       });
 
-      $(".header").css("position", "absolute"),
       $(".footer").css("position", "relative"),
       $("figcaption p").addClass("jp"),
       Column();

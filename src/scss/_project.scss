@@ -2,7 +2,7 @@
    display: grid;
    grid-template-columns: 1fr;
    margin: 0 auto;
-   margin-bottom: 6rem;
+   margin-bottom: var(--content-space);
 }
 
 .project-dot {
@@ -64,11 +64,11 @@
 }
 
 .para {
-   margin: 10rem 0;
+   margin: var(--content-space) 0;
 }
 
 .section-title {
-   margin: 4rem 0;
+   margin: var(--gutter) 0;
 }
 
 .image {
@@ -102,7 +102,7 @@ img {
 }
 
 figure + figure {
-   margin-top: 8rem;
+   margin-top: var(--gutter);
 }
 
 figcaption {
@@ -130,9 +130,6 @@ figcaption {
 
    .project-description,
    figcaption {
-      // margin-right: calc(25% + var(--gap));
-      // display: flex;
-      // flex-direction: row;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
       gap: var(--gutter);
@@ -148,8 +145,8 @@ figcaption {
          width: 100%;
          margin-left: 0;
       }
-      &.smaller {
-         padding: 0 10%;
+      &.small {
+         padding: 0 12.5%;
       }
    }
    .image {
