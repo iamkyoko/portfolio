@@ -28,6 +28,7 @@
 
    <figure>
       <img src="../image/app_mockup.png">
+      <img src="../image/app_mockup.webp">
    </figure>
 
    <section class="para max-width">
@@ -76,7 +77,7 @@
    </section>
 
    <figure>
-      <img class="full" src="../image/app_onboarding.png">
+      <img src="../image/app_onboarding.png">
       <figcaption>
          <p>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</p>
       </figcaption>
@@ -106,7 +107,7 @@
    </section>
 
    <figure>
-      <img class="full" src="../image/app_curation.png">
+      <img src="../image/app_curation.png">
       <figcaption>
          <p>以前はページ上部に固定表示されていたバナーも、ひとつのウィジェットとしてページのどこへでも配置できるように変更。</p>
       </figcaption>

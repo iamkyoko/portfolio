@@ -1,4 +1,5 @@
-<? include (__DIR__ . "/../inc/header.php"); ?>
+<?php include (__DIR__ . "/../inc/header.php"); ?>
+
 <div class="page">
 	<ul class="info">
 		<li class="info--title">
@@ -22,4 +23,5 @@
 			<img src="../image/project__lanvin01.png"></figure>
 	</section>
 </div>
-<? include (__DIR__ . "/../inc/footer.php");
+
+<?php include (__DIR__ . "/../inc/footer.php");

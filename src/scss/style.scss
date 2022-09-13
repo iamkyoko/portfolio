@@ -187,7 +187,7 @@ a {
    bottom: 0;
    left: 0;
    width: 100%;
-   padding: 0 var(--gutter) var(--gutter);
+   padding: 0 var(--alley) var(--alley);
    .footer__wrap {
       letter-spacing: -.03em;
       height: 10px;
@@ -292,25 +292,14 @@ a {
 }
 
 .bio {
-   padding-bottom: var(--alley);
-   span:nth-of-type(2) {
-      display: block;
-      padding-top: .8em;
-   }
-   .bio--link {
-      font-family: inherit;
-      font-size: inherit;
-      text-decoration: underline;
-      display: inline-flex;
-      align-items: center;
-      font-weight: 700;
+   padding-bottom: 4em;
+   p:first-of-type {
+      padding-bottom: .8em;
    }
 }
 
 .scroll {
-   font-family: "Mazius", serif;
    white-space: nowrap;
-   -ms-flex-item-align: end;
    align-self: end;
    display: flex;
    align-items: center;
@@ -437,7 +426,7 @@ a {
 .page {
    position: relative;
    width: 100%;
-   padding: 20rem var(--gutter);
+   padding: 25vh var(--gutter);
    overflow: hidden;
 }
 
