@@ -75,11 +75,9 @@
    display: grid;
    grid-template-columns: 1fr;
    position: relative;
-   margin: calc(var(--gap) * -1);
    figure {
       height: calc((100vw - var(--gutter) * 2) / 1.618);
       background: black;
-      margin: var(--gap);
       padding: 10%;
       overflow: hidden;
       &.h0 {

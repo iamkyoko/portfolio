@@ -5,15 +5,15 @@
 	<div class="info new max-width">
 
 		<div class="project-intro">
-
 			<p class="project-dot jp">モバイルアプリ「FACY」</p>
 			<div class="project-role-year">
 				<p>UI / UX Designer</p>
 				<time>2021</time>
 			</div>
-			
 		</div>
+
       <h1 class="project-title">Mobile App Development.</h1>
+
 		<div class="project-description">
 			<p class="jp first-2">
             前任デザイナーの退職を機に、自社のモバイルアプリ「フェイシー」のデザイン業務を担当。
@@ -26,6 +26,7 @@
             I worked closely with the product manager and was involved in the whole software development process: from building a design system, to organizing components, and defining specifications for new features.
          </p>
 		</div>
+
 	</div>
 
    <figure>

@@ -80,7 +80,8 @@ function FullWidthImage() {
 
 function Height() {
    var vh = $(window).outerHeight();
-   $(".dots").css("height", vh), $(".grid").css("min-height", vh);
+   $(".dots").css("height", vh);
+   //$(".grid").css("min-height", vh);
 }
 
 function Dot() {

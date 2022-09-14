@@ -18,7 +18,9 @@
             I'm a web and UI/UX designer with 6+ years experience who is seeking to expand my expertise. I'm curious, passionate, and obsessed with chocolates.
          </p>
          <p class="jp">
-            お菓子に目がない東京在住のweb・UI/UXデザイナー。6年目。お仕事探し中。
+            お菓子とウナギに目がない東京在住のweb・UI/UXデザイナー。6年目。大学中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
+            <br>
+            要件定義からユーザーテストまで、チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
       </div>
       <p class="scroll">
