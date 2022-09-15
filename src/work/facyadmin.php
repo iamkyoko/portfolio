@@ -2,7 +2,7 @@
 
 <div class="page">
 
-	<div class="info new max-width">
+	<div class="project-info max-width">
 
 		<div class="project-intro">
 
@@ -11,7 +11,7 @@
 				<p>
                UI/UX Designer
             </p>
-				<time>2022</time>
+				<time>2020 ― 2022</time>
 			</div>
 			
 		</div>

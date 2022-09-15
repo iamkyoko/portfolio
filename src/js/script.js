@@ -18,53 +18,60 @@ function Error() {
       // If the screen height is smaller than 500px
       ? (
          $(".error").css("visibility", "visible"),
-         $(".kyoko, .error--ie, .home, .page").css("display", "none")
+         $(".kyoko, .error--ie, .index, .page").css("display", "none")
          
       ) : vh > 500 && "visible" == err && (
       // If the screen height is bigger than 500px, and error content is shown
          $(".error").css("visibility", "hidden"),
-         $(".kyoko, .error--ie, .home, .page").css("display", "block")
+         $(".kyoko, .error--ie, .index, .page").css("display", "block")
 
       ) : userAgent.match(/msie | trident/) && (
       // If it's viewed in IE
          $(".error").css("visibility", "visible"),
-         $(".kyoko, .error--rotate, .home, .page").css("display", "none")
+         $(".kyoko, .error--rotate, .index, .page").css("display", "none")
       );
 }
 
-// Add max-width class to Title
-// function Title() {
-//    var vw = $(window).innerWidth();
-//    if (vw >= xl) {
-//       $(".grid").addClass("max-width")
-//    } else {
-//       $(".grid").hasClass("max-width")
-//       ? $(".grid").removeClass("max-width")
-//       : ""
-//    }
-// }
 
+
+//
 // Content Layout
+//
+
 function Column() {
-   const root = getComputedStyle(document.querySelector(":root"));
+
    // Get :root variables
-   var   column = Number(root.getPropertyValue("--column").trim()), 
-         end = column + 1;
-   $(window).innerWidth() >= md ? (
+   const root = getComputedStyle(document.querySelector(":root"));
+   var   column = Number(root.getPropertyValue("--column").trim());
+
+   if ( $(window).innerWidth() >= md ) {
+
       // Screen width is more than 768px
-      $(".c-1").css("grid-column", "1 / " + end),
-      $(".c-2").css("grid-column", "span " + column / 2),
+      
       $(".para .project-description p:first-of-type").addClass("middle-2"),
       $(".para .project-description p:last-of-type").addClass("last-2"),
       $("figcaption p").addClass("last-2"),
+
       console.log("Class added!")
-   ) : (
+   
+   } else {
+
       // Screen width is less than 768px
-      $(".para .project-description p:first-of-type").removeClass("middle-2"),
-      $(".para .project-description p:last-of-type").removeClass("last-2"),
-      $(".c-1, .c-2").css("grid-column", ""),
+
+      $(".para .project-description p:first-of-type").hasClass("middle-2")
+      ? $(".para .project-description p:first-of-type").removeClass("middle-2")
+      : "",
+
+      $(".para .project-description p:last-of-type").hasClass("last-2")
+      ? $(".para .project-description p:last-of-type").removeClass("last-2")
+      : "",
+
+      $("figcaption p").hasClass("last-2")
+      ? $("figcaption p").removeClass("last-2")
+      : "",
+
       console.log("Class removed!")
-   )
+   }
 }
 
 function FullWidthImage() {
@@ -81,7 +88,6 @@ function FullWidthImage() {
 function Height() {
    var vh = $(window).outerHeight();
    $(".dots").css("height", vh);
-   //$(".grid").css("min-height", vh);
 }
 
 function Dot() {
@@ -135,14 +141,20 @@ function test() {
 $(document).ready(function () {
 
    if (
+
       // See if there's an error
+
       (Error(),
          $(window).on("resize", function () {
             Error();
          }),
       "/" == location.pathname)
+
    ) {
+
+      //
       // In Top Page
+      //
 
       Height(),
       Dot(),
@@ -166,7 +178,15 @@ $(document).ready(function () {
       }
 
    } else {
+
+      //
       // In 2nd pages
+      //
+
+      $(".footer").css("position", "relative"),
+      $("figcaption p").addClass("jp"),
+      Column();
+      FullWidthImage();
 
       var timer = false;
       $(window).resize(function() {
@@ -180,11 +200,6 @@ $(document).ready(function () {
          FullWidthImage();
          }, 200);
       });
-
-      $(".footer").css("position", "relative"),
-      $("figcaption p").addClass("jp"),
-      Column();
-      FullWidthImage();
 
    } // end else
 });

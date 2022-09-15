@@ -1,6 +1,7 @@
 <?php include (__DIR__ . "/inc/header.php"); ?>
 
-<div class="home">
+<div class="index">
+
 	<figure class="dots">
 		<div class="d-a"></div>
 		<div class="d-b"></div>
@@ -8,25 +9,29 @@
 		<div class="d-d"></div>
 	</figure>
 
-   <section class="grid">
+   <section class="home">
+
       <ul class="title">
          <li class="title--title">P<span>o</span><span>r</span><span>t</span>folio</li>
          <li class="title--slash"><span></span></li>
          <li class="title--year"><span>&copy;</span><span>'<?php echo date('y'); ?></span></li></ul>
-      <div class="bio">
-         <p>
-            I'm a web and UI/UX designer with 6+ years experience who is seeking to expand my expertise. I'm curious, passionate, and obsessed with chocolates.
-         </p>
-         <p class="jp">
+
+      <div class="bio grid">
+         <p class="middle-2 jp">
             お菓子とウナギに目がない東京在住のweb・UI/UXデザイナー。6年目。大学中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
             <br>
             要件定義からユーザーテストまで、チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
-      </div>
-      <p class="scroll">
+         <p class="last-2">
+            I'm a web and UI/UX designer with 6+ years experience who is seeking to expand my expertise. I'm curious, passionate, and obsessed with chocolates and Unagi.
+         </p>
+         <p class="scroll">
          <span class="arrow">
             <?php include (__DIR__ . "/inc/arrow.html"); ?></span>
-         Scroll down</p>
+            Scroll down
+         </p>
+      </div>
+      
    </section>
 
    <section class="list" id="list">

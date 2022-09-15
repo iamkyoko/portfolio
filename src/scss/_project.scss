@@ -5,6 +5,13 @@
    margin-bottom: var(--content-space);
 }
 
+.project-info {
+   display: grid;
+   grid-template-columns: 1fr;
+   margin: 0 auto;
+   margin-bottom: var(--content-space);
+}
+
 .project-dot {
    display: flex;
    flex-direction: row;
@@ -49,18 +56,6 @@
          margin-top: var(--gutter);
       }
    }
-}
-
-.first-2 {
-   grid-column: 1 / span 2;
-}
-
-.middle-2 {
-   grid-column: 3 / span 2;
-}
-
-.last-2 {
-   grid-column: 5 / span 2;
 }
 
 .para {
@@ -108,21 +103,28 @@ figcaption {
 }
 
 @include mq(md) {
+
+   .project-info {
+      grid-auto-columns: min-content;
+      padding-left: 0;
+   }
+
+   .project-intro {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      flex-shrink: 1;
+      gap: var(--gutter);
+      & > * {
+         width: 50%;
+      }
+   }
+
    .info {
       grid-auto-columns: min-content;
       padding-left: 50%;
       &.new {
          padding-left: 0;
-         .project-intro {
-            display: flex;
-            flex-direction: row;
-            align-items: flex-start;
-            flex-shrink: 1;
-            gap: var(--gutter);
-            & > * {
-               width: 50%;
-            }
-         }
       }
    }
 
@@ -138,15 +140,17 @@ figcaption {
          }
       }
    }
+
    img {
       &.full {
          width: 100%;
          margin-left: 0;
       }
       &.small {
-         padding: 0 12.5%;
+         padding: 0 5%;
       }
    }
+
    .image {
       grid-template-columns: 1fr;
       figure {
@@ -170,5 +174,10 @@ figcaption {
 @include mq(lg) {
    .project-title {
       padding-left: calc(25% + var(--gap));
+   }
+   img {
+      &.small {
+         padding: 0 12.5%
+      }
    }
 }

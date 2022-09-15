@@ -2,13 +2,13 @@
 
 <div class="page">
 
-	<div class="info new max-width">
+	<div class="project-info max-width">
 
 		<div class="project-intro">
 			<p class="project-dot jp">モバイルアプリ「FACY」</p>
 			<div class="project-role-year">
 				<p>UI / UX Designer</p>
-				<time>2021</time>
+				<time>2020 ― 2022</time>
 			</div>
 		</div>
 

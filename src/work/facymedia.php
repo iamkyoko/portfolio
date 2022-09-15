@@ -2,7 +2,7 @@
 
 <div class="page">
 
-	<div class="info new max-width">
+	<div class="project-info max-width">
 
 		<div class="project-intro">
 
@@ -32,7 +32,7 @@
 	</div>
 
    <figure>
-      <img src="../image/web_Mockup.webp">
+      <img src="../image/facymedia_Mockup.webp">
    </figure>
    
 
@@ -58,7 +58,7 @@
    </section>
 
    <figure>
-      <img class="small" src="../image/web_Old_Design.webp">
+      <img class="small" src="../image/facymedia_Old_Design.webp">
       <figcaption>
          <p>
             改修前のデザイン。旧ロゴの雰囲気に合わせ、ポップでかわいらしい印象。
@@ -67,7 +67,7 @@
    </figure>
 
    <figure>
-      <img src="../image/web_Design_Ideation.webp">
+      <img src="../image/facymedia_Design_Ideation.webp">
       <figcaption>
          <p>
             WOMENは更新頻度が低いとのことだったので、ひとつ記事を入れ替えるだけで、トップ画面に「更新された」感が出るようなレイアウトを検討。
@@ -76,7 +76,7 @@
    </figure>
 
    <figure>
-      <img src="../image/web_Design_Archive.webp">
+      <img src="../image/facymedia_Design_Archive.webp">
    </figure>
 
 
@@ -102,11 +102,11 @@
    </section>
 
    <figure>
-      <img src="../image/web_New_Design_Men.webp">
+      <img src="../image/facymedia_New_Design_Men.webp">
    </figure>
 
    <figure>
-      <img src="../image/web_New_Women.webp">
+      <img src="../image/facymedia_New_Women.webp">
       <figcaption>
          <p>
             女性陣からの「指で動かしたい」との意見を受け、WOMENのトップ画面にはスライダーを設置。
@@ -115,7 +115,7 @@
    </figure>
 
    <figure>
-      <img src="../image/web_New_Design_Showcase.webp">
+      <img src="../image/facymedia_New_Design_Showcase.webp">
    </figure>
 
 </div>

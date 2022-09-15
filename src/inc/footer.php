@@ -1,6 +1,6 @@
       <footer class="footer">
 	<ul class="footer__wrap">
-		<li>© 2019 ー <?php echo date('Y'); ?></li>
+		<li>© 2019 ― <?php echo date('Y'); ?></li>
 	</ul>
       </footer>
 

@@ -49,7 +49,7 @@
          <li class="header--link">
             <a href="/#list">
                <span class="arrow"><?php include (__DIR__ . "/../inc/arrow.html")?></span>
-               Home</a>
+               Back</a>
          </li>
       <?php endif; ?>
       </ul>

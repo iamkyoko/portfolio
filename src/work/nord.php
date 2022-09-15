@@ -1,23 +1,8 @@
 <?php include (__DIR__ . "/../inc/header.php"); ?>
 
 <div class="page">
-   
-	<!-- <ul class="info">
-		<li class="info--title">
-			<h3>Cucina Nord Ibaraki</h3>
-			<time>2017</time>
-		</li>
-		<li class="info--desc"><p>
-			<span>
-				This was the very first website that I designed. I used brown as a key color to give it a subtle refined but approachable look.</span>
-			<span>
-				<i>Cucina Nord Ibaraki</i> is an Italian restaurant where you can enjoy fine meals made with local ingredients. One of the goals of this website was to make the restaurant the place to be for people from outside of Ibaraki, and of course for the locals as well.</span></p></li>
-		<li class="jp"><p>
-			これが私にとってwebデザイナーとして一番最初のサイト製作案件となりました。落ち着いたブラウンをキーカラーに用い、親しみやすい画面作りを心がけました。
-		</p></li>
-	</ul> -->
 
-   <div class="info new max-width">
+   <div class="project-info max-width">
 
 		<div class="project-intro">
 			<p class="project-dot jp">「made in いばらき」のイタリア料理</p>
@@ -32,6 +17,8 @@
 		<div class="project-description">
 			<p class="jp first-2">
             これが私にとってwebデザイナーとして一番最初のサイト製作案件となりました。落ち着いたブラウンをキーカラーに用い、親しみやすい画面作りを心がけました。
+            <br><br>
+            〈Cucina Nord Ibaraki／クチーナ・ノルド・イバラキ〉はイタリア語で「茨城の北の台所」の意。地元食材を中心としたイタリア料理を、県外・地元のひともふくめて楽しんでもらうため、お高く止まらない、開かれた場所としてアピールすることが目的でした。
 			</p>
 			<p class="middle-2">
 				This was the very first website that I designed. I used brown as a key color to give it a subtle refined but approachable look.
@@ -43,14 +30,16 @@
 	</div>
 
    <figure>
-      <img src="../image/project__nord01.webp">
+      <img src="../image/nord_scene.webp">
    </figure>
 
-   <section class="image">
-      <figure class="c-1 h0 p0">
-         <img src="../image/project__nord02.webp">
-      </figure>
-   </section>
+   <figure>
+      <img src="../image/nord_design.webp">
+   </figure>
+
+   <figure>
+      <img src="../image/nord_showcase.webp">
+   </figure>
 
 </div>
 
