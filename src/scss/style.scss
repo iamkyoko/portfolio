@@ -272,8 +272,7 @@ svg {
 .list--list {
    display: flex;
    flex-direction: column;
-   align-self: center;
-   margin: 20vh 0;
+   margin-top: -3em;
    counter-reset: num;
    gap: 2em;
    li {
