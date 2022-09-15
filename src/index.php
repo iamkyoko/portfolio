@@ -18,12 +18,14 @@
 
       <div class="bio grid">
          <p class="middle-2 jp">
-            お菓子とウナギに目がない東京在住のweb・UI/UXデザイナー。6年目。大学中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
+            お菓子とウナギに目がないweb・UI/UXデザイナー。6年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
             <br>
-            要件定義からユーザーテストまで、チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
+            チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
          <p class="last-2">
-            I'm a web and UI/UX designer with 6+ years experience who is seeking to expand my expertise. I'm curious, passionate, and obsessed with chocolates and Unagi.
+            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over 6 years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
+            <br>
+            I love working with teams from different cultures and backgrounds. And cats. I love cats.
          </p>
          <p class="scroll">
          <span class="arrow">
