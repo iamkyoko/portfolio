@@ -75,13 +75,24 @@ function Column() {
 }
 
 function FullWidthImage() {
+
    var vw = $(window).innerWidth();
+
    if (vw <= md) {
-      $("figure img:not(.small)").addClass("full")
+
+      $("figure img:not(.small)").addClass("full"),
+      $("figure .video").addClass("full")
+
    } else {
+
       $("figure img").hasClass("full")
          ? $("figure img").removeClass("full")
-         : ""
+         : "",
+
+      $("figure .video").hasClass("full")
+      ? $("figure .video").removeClass("full")
+      : ""
+
    }   
 };
 

@@ -2,8 +2,9 @@
 @import "font";
 @import "project";
 
-$Beige: #F1DFC4;
-$Orange: #FF611D;
+$black: #010101;
+$orange: #F15412;
+$Accents: #34B3F1;
 
 
 :root {
@@ -51,7 +52,7 @@ a {
 
 ::selection {
    color: white;
-   background: black;
+   background: $black;
 }
 
 ::-webkit-scrollbar {
@@ -66,8 +67,8 @@ html, body {
    font-size: 62.5%;
    font-family: $en-base-font;
    font-weight: 400;
-   color: #000;
-   background-color: $Orange;
+   color: $black;
+   background-color: $orange;
    line-height: 1;
    text-rendering: optimizeLegibility;
    scrollbar-width: none;
@@ -318,7 +319,7 @@ svg {
    div {
       width: 90px;
       height: 90px;
-      background-color: #67b7a3;
+      background-color: $Accents;
       border-radius: 50%;
       position: absolute;
 
@@ -383,6 +384,14 @@ svg {
       --content-space: 10vw;
    }
 
+   a {
+      transition: color .2s;
+      &:hover {
+         color: $Accents;
+         transition: color .2s;
+      }
+   }
+
    .grid {
       grid-template-columns: repeat(6, 1fr);
    }
@@ -423,12 +432,12 @@ svg {
    .header--link {
       a {
          .arrow {
-            transition: transform .5s;
+            transition: transform .2s;
          }
          &:hover {
             .arrow {
                transform: rotate(0);
-               transition: transform .5s;
+               transition: transform .2s;
             }
          }
       }

@@ -65,6 +65,17 @@
    </figure>
 
    <figure>
+      <div class="video small">
+         <video src="../image/app_User_Test.mp4" loop autoplay muted></video>
+      </div>
+      <figcaption>
+         <p>
+            少ないリソースのなかで合理的に効果を検証すべく、社内でのユーザーテストを実施。プロトタイプを工夫し、短い時間・少ないコストで、よりリアルなフィードバックを獲得するべく試行錯誤を繰り返しました。
+         </p>
+      </figcaption>
+   </figure>
+
+   <figure>
       <img src="../image/app_documentation.webp">
       <figcaption>
          <p>
