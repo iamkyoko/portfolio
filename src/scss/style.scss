@@ -6,7 +6,7 @@ $black: #010101;
 $orange: #F15412;
 $beige: #EDE7E2;
 $yellow: #F5FF7D;
-$Accents: #34B3F1;
+$blue: #34B3F1;
 
 
 
@@ -71,7 +71,7 @@ html, body {
    font-family: $en-base-font;
    font-weight: 400;
    color: $black;
-   background-color: $beige;
+   background-color: $orange;
    line-height: 1;
    text-rendering: optimizeLegibility;
    scrollbar-width: none;
@@ -186,7 +186,6 @@ svg {
    align-self: center;
    // margin: 40vh 0 25vh;
    .title--title {
-      // font-family: "Mazius", serif;
       letter-spacing: -.03em;
       display: flex;
       margin-left: -0.08em;
@@ -322,7 +321,7 @@ svg {
    div {
       width: 90px;
       height: 90px;
-      background-color: $yellow;
+      background-color: $beige;
       border-radius: 50%;
       position: absolute;
 
@@ -390,7 +389,7 @@ svg {
    a {
       transition: color .2s;
       &:hover {
-         color: $yellow;
+         color: $beige;
          transition: color .2s;
       }
    }
