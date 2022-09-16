@@ -13,21 +13,21 @@ AuthName "Say the magic words!"
 AuthType Basic
 require valid-user -->
 
-<!-- # 拡張子有のURLをリダイレクト
+# 拡張子有のURLをリダイレクト
 RewriteCond %{THE_REQUEST} \.(php|html)\ HTTP
-RewriteRule ^(.*)\.(php|html)$ /$1 [R=301,L] -->
+RewriteRule ^(.*)\.(php|html)$ /$1 [R=301,L]
 
-<!-- # wwwをリダイレクト
+# wwwをリダイレクト
 RewriteEngine On
 RewriteCond %{HTTP_HOST} ^www\.kyokobaba\.com
-RewriteRule ^(.*)$ https://kyokobaba.com/$1 [R=301,L] -->
+RewriteRule ^(.*)$ https://kyokobaba.com/$1 [R=301,L]
 
 # httpsにリダイレクト
 RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
 
-<!-- # PHPをHTML上で動作させるための記述
+# PHPをHTML上で動作させるための記述
 <FilesMatch "\.html$">
   AddType application/x-httpd-php .html
-</FilesMatch> -->
+</FilesMatch>
