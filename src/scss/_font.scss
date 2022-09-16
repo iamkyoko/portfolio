@@ -40,9 +40,9 @@ $en-base-font: "GT Walsheim";
 
 
 :root {
-   --jp-base-font-size: calc(11px + 1 * (100vw - 320px) / 960);
-   --jp-small-font-size: calc(11px + 0.75 * (100vw - 320px) / 960);
-   --en-base-font-size: calc(12.5px + 1 * (100vw - 320px) / 960);
+   --jp-base-font-size: calc(12px + 1 * (100vw - 320px) / 960);
+   --jp-small-font-size: calc(12px + 0.75 * (100vw - 320px) / 960);
+   --en-base-font-size: calc(12.8px + 1 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
 }
 
@@ -64,7 +64,7 @@ a {
 
 h3, p, time {
    font-size: var(--en-base-font-size);
-   line-height: 1.8em;
+   line-height: 1.92em;
 }
 
 figcaption {
