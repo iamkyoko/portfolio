@@ -19,8 +19,8 @@ RewriteRule ^(.*)\.(php|html)$ /$1 [R=301,L]
 
 # wwwをリダイレクト
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www\.kyokobaba\.com
-RewriteRule ^(.*)$ https://kyokobaba.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.stg\.kyokobaba\.com
+RewriteRule ^(.*)$ https://stg.kyokobaba.com/$1 [R=301,L]
 
 # httpsにリダイレクト
 RewriteEngine On
