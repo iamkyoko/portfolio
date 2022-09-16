@@ -66,7 +66,7 @@
 
    <figure>
       <div class="video small">
-         <video src="../image/app_User_Test.mp4" loop autoplay muted></video>
+         <video src="../image/app_User_Test.mp4" loop autoplay muted playsinline></video>
       </div>
       <figcaption>
          <p>
