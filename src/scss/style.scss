@@ -175,9 +175,9 @@ svg {
 .home {
    position: relative;
    display: grid;
-   grid-template-rows: auto min-content min-content;
+   grid-template-rows: 70vh min-content min-content;
    width: 100%;
-   height: 100vh;
+   min-height: 100vh;
    padding-bottom: var(--alley);
 }
 
@@ -399,7 +399,9 @@ svg {
    }
 
    .home {
-      grid-template-columns: 1fr
+      grid-template-columns: 1fr;
+      grid-template-rows: auto min-content min-content;
+
    }
 
    .scroll {
