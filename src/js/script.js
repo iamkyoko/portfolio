@@ -50,9 +50,7 @@ function Column() {
       
       $(".para .project-description p:first-of-type").addClass("middle-2"),
       $(".para .project-description p:last-of-type").addClass("last-2"),
-      $("figcaption p").addClass("last-2"),
-
-      console.log("Class added!")
+      $("figcaption p").addClass("last-2") 
    
    } else {
 
@@ -68,9 +66,8 @@ function Column() {
 
       $("figcaption p").hasClass("last-2")
       ? $("figcaption p").removeClass("last-2")
-      : "",
+      : ""
 
-      console.log("Class removed!")
    }
 }
 
@@ -138,16 +135,6 @@ function Dot() {
    });
 }
 
-function test() {
-   const vw = $(window).innerWidth();
-   const md = 768;
-   if (vw >= md) {
-      console.log("It's more than 768px");
-   } else {
-      console.log("It's less than 768px");
-   }
-}
-
 // Actual Script
 $(document).ready(function () {
 
@@ -206,7 +193,6 @@ $(document).ready(function () {
          }
          timer = setTimeout(function() {
          // Action after resized
-         test();
          Column();
          FullWidthImage();
          }, 200);
