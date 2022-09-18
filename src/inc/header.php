@@ -2,9 +2,14 @@
 <meta http-equiv="Content-Language" content="ja">
 <meta name="robots" content="noindex"/>
 <meta name="google" content="notranslate">
-<head>
+<head prefix="og: https://ogp.me/ns#">
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1, maximum-scale=1"/>
+<!-- og -->
+   <meta property="og:site_name" content="Kyoko Baba"/>
+   <meta property="og:description" content="Kyoko Baba ― Web and UX/UI Designer." />
+   <meta property="og:image" content="<?php echo ($dist . "/asset/ogp.png"); ?>"/>
+<!-- title -->
    <?php
       $dist = (empty($_SERVER["HTTPS"]) ? "http://" : "https://") . $_SERVER["HTTP_HOST"];
 
@@ -34,8 +39,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo ($dist . "/css/style.css"); ?>"/>
 <!-- favicon -->
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo ($dist . "/asset/favicon.ico"); ?>"/>
-	<link rel="apple-touch-icon" sizes="256x256" href="<?php echo ($dist . "/asset/apple-touch-icon.png"); ?>"/>
+	<link rel="apple-touch-icon" href="<?php echo ($dist . "/asset/apple-touch-icon.png"); ?>" sizes="256x256"/>
+   <link rel="icon" type="image/png"  href="<?php echo ($dist . "/asset/android-chrome-512x512.png"); ?>" sizes="512x512"/>
 </head>
+
 <!-- content -->
 <body>
    <header class="header">
