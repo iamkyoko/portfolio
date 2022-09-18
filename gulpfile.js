@@ -22,7 +22,6 @@ var paths = {
    'src_image' : './src/image',
    'src_inc'   : './src/inc',
    'src_work'  : './src/work',
-   'src_font'  : './src/font',
 
    // Destination
    'dist'      : './dist',
@@ -112,15 +111,6 @@ gulp.task('image', function () {
 
 
 
-// Font
-
-gulp.task('font', function () {
-   return gulp.src(paths.src_font + '**/*')
-      .pipe(gulp.dest(paths.dist))
-});
-
-
-
 // BrowserSync
 
 gulp.task('browser-sync', (done) => {
@@ -160,4 +150,4 @@ gulp.task('watch', (done) => {
 // gulp
 
 gulp.task('default',
-   gulp.series('sass', 'asset', 'image', 'inc', 'work', 'index', 'font', 'js'));
+   gulp.series('sass', 'asset', 'image', 'inc', 'work', 'index', 'js'));
