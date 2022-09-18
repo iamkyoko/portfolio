@@ -42,7 +42,6 @@
 	<link rel="apple-touch-icon" href="<?php echo ($dist . "/asset/apple-touch-icon.png"); ?>" sizes="256x256"/>
    <link rel="icon" type="image/png"  href="<?php echo ($dist . "/asset/android-chrome-512x512.png"); ?>" sizes="512x512"/>
 </head>
-
 <!-- content -->
 <body>
    <header class="header">
