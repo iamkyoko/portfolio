@@ -16,12 +16,12 @@
 
 		<div class="project-description">
 			<p class="jp first-2">
-            前任デザイナーの退職を機に、自社のモバイルアプリ「フェイシー」のデザイン業務を担当。
+            前任デザイナーの退職を機に、自社モバイルアプリ「フェイシー」のデザイン業務を担当。EC業界の活性化を目的とし、ファッション・コスメをメインに、オンライン・オフラインを問わない、消費者を軸とした購買のしやすさの構築を目指した。
             <br><br>
             デザインシステムの構築、コンポーネントの整理 に始まり、新機能開発の用件定義など、プロダクトマネージャーとともにソフトウェア開発に従事しました。
 			</p>
 			<p class="middle-2">
-            I was tasked with the design of our FACY app when a previous designer left the company.
+            I was tasked with the design of our FACY app when a previous designer left the company. The intention behind the app was to create a better offline and online shopping experience centered around the customer. We focused on clothing and cosmetics in order to help improve e-commerce options in those markets. 
             <br><br>
             I worked closely with the product manager and was involved in the whole software development process: from building a design system, to organizing components, and defining specifications for new features.
          </p>

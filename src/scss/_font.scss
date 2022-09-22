@@ -8,7 +8,7 @@ $en-base-font: "DM Sans";
 :root {
    --jp-base-font-size: calc(12px + 1 * (100vw - 320px) / 960);
    --jp-small-font-size: calc(12px + 0.75 * (100vw - 320px) / 960);
-   --en-base-font-size: calc(13.6px + .4 * (100vw - 320px) / 960);
+   --en-base-font-size: calc(13.6px + 1.13333333333 * (100vw - 320px) / 960);
    --head-font-size: 10vw;
 }
 
