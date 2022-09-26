@@ -7,11 +7,11 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.+)$ $1\.php
 
 # Basic認証
-# AuthUserFile https://iamkyoko.github.io/portfolio/.htpasswd
-# AuthGroupFile /dev/null
-# AuthName "Say the magic words!"
-# AuthType Basic
-# require valid-user
+AuthUserFile https://kyokobaba.com/.htpasswd
+AuthGroupFile /dev/null
+AuthName "Say the magic words!"
+AuthType Basic
+require valid-user
 
 # 拡張子有のURLをリダイレクト
 RewriteCond %{THE_REQUEST} \.(php|html)\ HTTP
