@@ -7,7 +7,7 @@ RewriteCond %{REQUEST_FILENAME}\.php -f
 RewriteRule ^(.+)$ $1\.php
 
 # Basic認証
-AuthUserFile https://kyokobaba.com/.htpasswd
+AuthUserFile /home/users/1/main.jp-iyemon/web/git/.htpasswd
 AuthGroupFile /dev/null
 AuthName "Say the magic words!"
 AuthType Basic
