@@ -5,7 +5,7 @@
    <div class="project-info max-width">
 
 		<div class="project-intro">
-			<p class="project-dot jp">Sony Music〈綾乃ましろ〉オフィシャルサイトリニューアル</p>
+			<p class="project-dot jp">〈綾乃ましろ〉サイトリニューアル</p>
 			<div class="project-role-year">
 				<p>Web Designer</p>
 				<time>2017</time>

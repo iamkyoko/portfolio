@@ -8,7 +8,6 @@
 .project-dot {
    display: flex;
    flex-direction: row;
-   align-items: center;
    margin-bottom: 2rem;
    &::before {
       content: "●";
