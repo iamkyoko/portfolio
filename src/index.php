@@ -23,7 +23,7 @@
             チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
          <p class="last-2">
-            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over 6 years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
+            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over 6<?php $year = date('y') - 2015; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
             <br>
             I love working with teams from different cultures and backgrounds. And cats. I love cats.
          </p>
