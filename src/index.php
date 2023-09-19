@@ -16,14 +16,15 @@
          <li class="title--slash"><span></span></li>
          <li class="title--year"><span>&copy;</span><span>'<?php echo date('y'); ?></span></li></ul>
 
+      <?php $experience = date('Y') - 2015; ?>
       <div class="bio grid">
          <p class="middle-2 jp">
-            お菓子とウナギに目がないweb・UI/UXデザイナー。6年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
+            お菓子とウナギに目がないweb・UX/UIデザイナー。<?php echo $experience; ?>年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、現在の会社に入社。そこから半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
             <br>
             チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
          <p class="last-2">
-            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over 6<?php $year = date('y') - 2015; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
+            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over <?php echo $experience; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
             <br>
             I love working with teams from different cultures and backgrounds. And cats. I love cats.
          </p>
