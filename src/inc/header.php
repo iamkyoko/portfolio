@@ -28,8 +28,8 @@
          "maquia"    => "MAQUIA ONLINE"
          );
       $myName = "Kyoko Baba";
-         if ($key == null) {
-               echo "<title>" . $myName . " — Portfolio" . "</title>";
+         if ($key !== in_array($key, $keys)) {
+            echo "<title>" . $myName . " — Portfolio" . "</title>";
          } else {
             $title = $keys[$key];
             echo '<title>' . $title . ' — ' . $myName . '</title>';
