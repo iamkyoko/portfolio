@@ -16,11 +16,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    #- name: Transpile for deployment
-    #  run: |
-    #    npm install
-    #    npm install -g gulp
-    #    gulp
+    - name: Transpile for deployment
+      run: |
+        npm install
+        npm install -g gulp
+        gulp
 
     - name: Deploy via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
