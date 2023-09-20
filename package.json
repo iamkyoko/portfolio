@@ -4,7 +4,7 @@
    "description": "",
    "main": "./dist/index.php",
    "devDependencies": {
-      "browser-sync": "^2.27.10",
+      "browser-sync": "^2.29.3",
       "gulp": "^4.0.2",
       "gulp-autoprefixer": "^8.0.0",
       "gulp-notify": "^4.0.0",
@@ -13,10 +13,18 @@
       "gulp-sass": "^5.1.0",
       "gulp-sourcemaps": "^3.0.0",
       "gulp-uglify": "^3.0.2",
-      "sass": "^1.54.8"
+      "sass": "^1.67.0"
    },
+   "preinstall": "npx npm-force-resolutions",
    "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
+   },
+   "overrides": {
+      "chokidar": "3.5.3",
+      "glob-parent": "6.0.2"
+   },
+   "resolutions": {
+      "glob-parent": "6.0.2"
    },
    "repository": {
       "type": "git",
@@ -29,5 +37,9 @@
       "url": "https://github.com/iamkyoko/portfolio/issues"
    },
    "homepage": "http://.",
-   "dependencies": {}
+   "dependencies": {
+      "lodash": "^4.17.21",
+      "node-sass": "^9.0.0",
+      "saas": "^1.0.0"
+   }
 }
