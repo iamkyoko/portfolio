@@ -39,7 +39,6 @@
    "homepage": "http://.",
    "dependencies": {
       "lodash": "^4.17.21",
-      "node-sass": "^9.0.0",
       "saas": "^1.0.0"
    }
 }
