@@ -3,7 +3,8 @@ node_modules
 .vercel
 .vscode
 
-# css
+# CSS
 .sass-cache/
 
+# Proc Env
 dist
