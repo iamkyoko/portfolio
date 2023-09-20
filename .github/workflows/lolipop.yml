@@ -14,7 +14,7 @@ jobs:
       image: node:14-alpine
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
     
     - name: Transpile for deployment
       run: |
