@@ -5,8 +5,8 @@
    "main": "./dist/index.php",
    "dependencies": {
       "lodash": "^4.17.21",
-      "saas": "^1.0.0",
-      "postcss": ">=8.4.31"
+      "mocha": "^10.2.0",
+      "saas": "^1.0.0"
    },
    "devDependencies": {
       "browser-sync": "^2.29.3",
@@ -16,7 +16,7 @@
       "gulp-plumber": "^1.2.1",
       "gulp-rename": "^2.0.0",
       "gulp-sass": "^5.1.0",
-      "gulp-sourcemaps": "^3.0.0",
+      "gulp-sourcemaps": "^2.6.5",
       "gulp-uglify": "^3.0.2",
       "postcss": ">=8.4.31",
       "postcss-focus": "^7.0.0",
@@ -27,7 +27,8 @@
    },
    "preinstall": "npx npm-force-resolutions",
    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+      "test": "mocha --recursive test",
+      "bump-version": "npm version patch"
    },
    "overrides": {
       "chokidar": "3.5.3",
