@@ -4,14 +4,15 @@
    "description": "",
    "main": "./dist/index.php",
    "dependencies": {
+      "axios": "^1.6.2",
       "lodash": "^4.17.21",
       "mocha": "^10.2.0",
       "saas": "^1.0.0"
    },
    "devDependencies": {
-      "browser-sync": "^2.29.3",
+      "browser-sync": "^2.23.7",
       "gulp": "^4.0.2",
-      "gulp-autoprefixer": "^8.0.0",
+      "gulp-autoprefixer": "^9.0.0",
       "gulp-notify": "^4.0.0",
       "gulp-plumber": "^1.2.1",
       "gulp-rename": "^2.0.0",
@@ -20,7 +21,7 @@
       "gulp-uglify": "^3.0.2",
       "postcss": ">=8.4.31",
       "postcss-focus": "^7.0.0",
-      "sass": "^1.69.3"
+      "sass": "^1.69.5"
    },
    "peerDependencies": {
       "postcss": "^8.0.0"
