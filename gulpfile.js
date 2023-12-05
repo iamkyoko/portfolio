@@ -1,14 +1,16 @@
-var gulp = require('gulp');
-var notify = require('gulp-notify');
-var plumber = require('gulp-plumber');
-var sass = require('gulp-sass')(require('sass'));
-var sourcemaps = require('gulp-sourcemaps');
-var autoprefixer = require('gulp-autoprefixer');
-var uglify = require('gulp-uglify');
-var rename = require('gulp-rename');
-var browserSync = require('browser-sync').create();
+import gulp from 'gulp'
+import notify from 'gulp-notify'
+import plumber from 'gulp-plumber'
+import sourcemaps from 'gulp-sourcemaps'
+import autoprefixer from 'gulp-autoprefixer'
+import uglify from 'gulp-uglify'
+import rename from 'gulp-rename'
+import browserSync from 'browser-sync'
 
+import gulpSass from "gulp-sass";
+import * as nodeSass from "sass";
 
+const sass = gulpSass(nodeSass);
 
 // Path
 
