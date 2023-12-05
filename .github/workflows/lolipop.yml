@@ -19,8 +19,7 @@ jobs:
     - name: Transpile for deployment
       run: |
         npm install
-        npm install -g gulp
-        gulp
+        npm run build
 
     - name: Deploy via FTP
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
