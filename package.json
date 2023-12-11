@@ -31,7 +31,8 @@
    "preinstall": "npx npm-force-resolutions",
    "scripts": {
       "test": "mocha --recursive test",
-      "bump-version": "npm version patch"
+      "bump-version": "npm version patch",
+      "build": "gulp"
    },
    "overrides": {
       "chokidar": "3.5.3",
