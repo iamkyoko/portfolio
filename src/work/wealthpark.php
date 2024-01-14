@@ -30,7 +30,7 @@
 	</div>
 
    <figure>
-      <img src="../image/wealthpark/wp_mockup.png">
+      <img src="../image/wp_mockup.png">
    </figure>
 
    <!-- Section -->
@@ -55,7 +55,7 @@
    </section>
 
    <figure>
-      <img src="../image/wealthpark/wp_2fa.png">
+      <img src="../image/wp_2fa.png">
       <figcaption>
          <p>
             ID/Password（知識要素）と認証コードの受け取り（所持要素）を合わせた2段階認証。
@@ -83,11 +83,11 @@
    </section>
 
    <figure>
-      <img src="../image/wealthpark/wp_2fa_spec_phonenumber.png">
+      <img src="../image/wp_2fa_spec_phonenumber.png">
    </figure>
 
    <figure>
-      <img src="../image/wealthpark/wp_2fa_spec_codeinput.png">
+      <img src="../image/wp_2fa_spec_codeinput.png">
    </figure>
 
    <!-- Section -->
@@ -112,7 +112,7 @@
       </section>
 
       <figure>
-         <img src="../image/wealthpark/wp_sso_spec_breakdown.png">
+         <img src="../image/wp_sso_spec_breakdown.png">
          <figcaption>
             <p>
                ページ内でUIの変更・追加があった場合には英語ラベルのデザインを用意し、内容を文章・口頭両方での説明の機会を設けました。
@@ -143,7 +143,7 @@
    </section>
 
    <figure>
-      <img src="../image/wealthpark/wp_documents.png">
+      <img src="../image/wp_documents.png">
       <figcaption>
          <p>
             エンジニアに向けたデザインについてのオンボーディングミーティングの開催・ドキュメントの作成など、より迅速なチームワークの構築・醸成を目指しました。
