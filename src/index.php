@@ -16,15 +16,15 @@
          <li class="title--slash"><span></span></li>
          <li class="title--year"><span>&copy;</span><span>'<?php echo date('y'); ?></span></li></ul>
 
-      <?php $experience = date('Y') - 2015; ?>
+      <?php $experience = date('Y') - 2016; ?>
       <div class="bio grid">
          <p class="middle-2 jp">
-            お菓子とウナギに目がないweb・UX/UIデザイナー。<?php echo $experience; ?>年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、2社目の会社に入社。半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
+            チョコに目がないweb・UX/UIデザイナー。<?php echo $experience; ?>年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、2社目の会社に入社。半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
             <br>
             チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
          </p>
          <p class="last-2">
-            I'm a chocolate and unagi-obsessed Web and UX/UI Designer with over <?php echo $experience; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
+            I'm a chocolate-obsessed Web and UX/UI Designer with over <?php echo $experience; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
             <br>
             I love working with teams from different cultures and backgrounds. And cats. I love cats.
          </p>
@@ -39,8 +39,10 @@
 
    <section class="list" id="list">
       <ul class="list--head">
-         <li>SELECTED WORKS <span></span> 2015 / <?php echo date('Y'); ?></li></ul>
+         <li>Selected Works<span></span> 2015 / <?php echo date('Y'); ?></li></ul>
       <ul class="list--list">
+         <li><a href="work/wealthpark.php">WealthPark Business
+            <time>'23</time></a></li>
          <li><a href="work/facyapp.php">Facy App
             <time>'21</time></a></li>
          <li><a href="work/facyadmin.php">Facy Shop Admin
