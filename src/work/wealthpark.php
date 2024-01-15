@@ -72,7 +72,7 @@
 			<p class="jp">
             主な機能・シナリオに対する仕様をプロダクトマネージャーが主導する傍ら、以前からログイン回りに対して寄せられていたフィードバックへの対応と、よりスムーズな体験のための仕様を「UX/UIスペック」として追加しデザイナー主導で体験の向上・改善を目指しました。
             <br><br>
-            利用ユーザーの大半はデジタルネイティブではない世代という想定のもと、深く考えずにサクサク進むフローを意識しました。
+            利用ユーザーの大半はデジタルネイティブではない世代という想定のもと、深く考えずにサクサク進めるフローを意識しました。
          </p>
 			<p>
             While the product manager led the specification of the main functions and scenarios, designers handled feedback on the login area and added specifications for a smoother experience as "UX/UI spec”.
