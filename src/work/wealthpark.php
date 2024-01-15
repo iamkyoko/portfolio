@@ -21,9 +21,9 @@
             自分の入社時にはアプリリリースから少なくとも2年以上経過していましたが、今までのデザインデータおよびデザインシステムなどは社内に残っていなかったので各プロジェクトの進行に合わせデザインコンポーネントの定義・整理をしていきました。
 			</p>
 			<p class="middle-2">
-            I was tasked with the design of our FACY app when a previous designer left the company. The intention behind the app was to create a better offline and online shopping experience centered around the customer. We focused on clothing and cosmetics in order to help improve e-commerce options in those markets. 
+            WealthPark Business is a workflow management system for property management companies. I joined the company as the first mobile product designer, and developed new features and product improvements for the native mobile app. 
             <br><br>
-            I worked closely with the product manager and was involved in the whole software development process: from building a design system, to organizing components, and defining specifications for new features.
+            When I joined the team, more than two years had passed since the app was released. Yet, there was no design data or design system within the company, so I started defining and organizing design elements as each project progressed.
          </p>
 		</div>
 
@@ -44,12 +44,12 @@
 			<p class="jp">
             日本国内でも著名な大企業 (B) との契約締結に際し、彼らのエンドユーザー (C) にサービスを提供するための条件として最初に2段階認証、次にシングルサインオンの機能を導入しました。
             <br><br>
-            2段階認証で対応する電話番号の定義や認証コードに利用する外部サービスの挙動・SSOのための顧客側アプリとの連携など、細かな技術仕様を理解するため、プロダクトマネージャー・エンジニアチームとの話し合いを重ねつつデザインを進めました。
+            2段階認証で対応する電話番号の定義や認証コードに利用する外部サービスの挙動など、細かな技術仕様を理解するため、プロダクトマネージャー・エンジニアチームとの話し合いを重ねつつデザインを進めました。
          </p>
 			<p>
-            One of the first things I did as a UI designer on the app project was to ensure there would be a “design check” phase at the end of the engineering flow. I managed to convince the engineers to add this step by telling them, “Not everything looks as beautiful on an actual device as it does in a design tool. Think of how amazing you look in the mirror, then look at your passport picture. It's the same person, but a very different look.” 
+            I led design for two major projects for login-UX when the company partnered with a well-known Japanese PM company (B) who asked us to implement both 2FA and SSO for their end users (C).
             <br><br>
-            I always made sure to share research and case studies with my team before engaging in a conversation on how to implement new features like favorite items, related items and search features. Doing so really helped us communicate on the same level with objective data on which to base our decisions, instead of just arguing over our subjective opinions. 
+            To determine our design requirements, I met the product manager and engineers regularly. Together, we learned and defined the necessary technical specs, such as the definition of 2FA phone numbers, and the behavior of external services for authentication codes.
 			</p>
 		</div>
    </section>
@@ -72,12 +72,12 @@
 			<p class="jp">
             主な機能・シナリオに対する仕様をプロダクトマネージャーが主導する傍ら、以前からログイン回りに対して寄せられていたフィードバックへの対応と、よりスムーズな体験のための仕様を「UX/UIスペック」として追加しデザイナー主導で体験の向上・改善を目指しました。
             <br><br>
-            利用ユーザーの大半はデジタルネイティブではない世代という想定のもと、認証コードの体験はタップする回数を減らし何もしなくてもサクサク進むフローを意識しました。
+            利用ユーザーの大半はデジタルネイティブではない世代という想定のもと、深く考えずにサクサク進むフローを意識しました。
          </p>
 			<p>
-            One of the first things I did as a UI designer on the app project was to ensure there would be a “design check” phase at the end of the engineering flow. I managed to convince the engineers to add this step by telling them, “Not everything looks as beautiful on an actual device as it does in a design tool. Think of how amazing you look in the mirror, then look at your passport picture. It's the same person, but a very different look.” 
+            While the product manager led the specification of the main functions and scenarios, designers handled feedback on the login area and added specifications for a smoother experience as "UX/UI spec”.
             <br><br>
-            I always made sure to share research and case studies with my team before engaging in a conversation on how to implement new features like favorite items, related items and search features. Doing so really helped us communicate on the same level with objective data on which to base our decisions, instead of just arguing over our subjective opinions. 
+            Assuming that the majority of users will be non-digital natives, I tried to create a flow that allows users to proceed using only their intuition.
 			</p>
 		</div>
    </section>
@@ -104,9 +104,9 @@
                SSOプロジェクトではその反省を生かし、iOS・Androidともにフローに即したデザインを制作。週次でエンジニアに進捗を確認し、地道に軌道修正を実施しました。
             </p>
             <p>
-               As soon as I started working on the app's design, I noticed inconsistencies in color definition and font, as well as design differences between iOS and Android. To fix this long-overlooked problem, in addition to taking over the iOS design creation process, I decided to build from scratch a new Android design.
+               During the 2FA project, I tried to simplify the process by creating a different set of designs for iOS and Android to meet a tight deadline. However, this did not work out as well as I hoped: later in the QA phase, it turned out that the engineers had some misconceptions.
                <br><br>
-               I organized and updated design components for each platform, as well as for common components shared between platforms. Then, I went through the entire build and little by little, in constant communication with the developer team, I filled the gap between our target design and the build.
+               To avoid such misconceptions in the SSO project, I made sure to create a design for the entire flow for both iOS and Android. I checked progress with the engineers on a weekly basis and stayed in sync throughout the process.
             </p>
          </div>
       </section>
@@ -135,9 +135,9 @@
             モバイル関連のプロジェクトが立ち上がるたびに、デザインの説明やFeasibility Check、エンジニアからの質問に回答するなど、モバイルプロダクトにおけるエンジニア・デザイナー間のコミュニケーションの基盤となるミーティングとして運用を続けていました。
 			</p>
 			<p>
-            When it came time to improve usability for our app's top page, there was a gap between how users shop for fashion and our initial concept of using GPS tracking information to “Find a shop within 3km of where you are!” Not to mention most people don't like sharing their location. The concept wasn't realistic.
+            Although the mobile team was quite small, we had members from around the world. Most importantly, due to the absence of a dedicated designer for a long time, I hosted a weekly meeting called "Fika" to familiarize the team with designers.
             <br><br>
-            Instead of trying to get personal information from users, we switched to letting users pick the area where they want to shop. Since some areas had lots of available shops and others didn't, we designed a curation tool to manage content and even out the gaps. I was in charge of designing all the widgets.
+            For every mobile-related project, I utilized these meetings to explain the design, do feasibility checks, and answer questions from engineers. Fika continues to serve as the communication foundation between engineers and designers for the mobile product.
 			</p>
 		</div>
    </section>
