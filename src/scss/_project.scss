@@ -80,7 +80,7 @@
 }
 
 figure + figure {
-   margin-top: calc(var(--content-space) * .8);
+   margin-top: var(--gutter);
 }
 
 video {
@@ -93,7 +93,7 @@ video {
 }
 
 figcaption {
-   padding-top: 3.6em;
+   padding-top: 1.6em;
 }
 
 .full {
