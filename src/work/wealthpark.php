@@ -12,7 +12,7 @@
 			</div>
 		</div>
 
-      <h1 class="project-title">Mobile App (and Team) Development.</h1>
+      <h1 class="project-title">Mobile App (and Team) Building.</h1>
 
 		<div class="project-description">
 			<p class="jp first-2">
@@ -55,10 +55,19 @@
    </section>
 
    <figure>
+      <img src="../image/wp_2fa_old.png">
+      <figcaption>
+         <p>
+            2FA開発以前のUI。メールアドレス・携帯番号の入力フォームの切り替えがわかりづらいとのフィードバックが寄せられていました。
+         </p>
+      </figcaption>
+   </figure>
+
+   <figure>
       <img src="../image/wp_2fa.png">
       <figcaption>
          <p>
-            ID/Password（知識要素）と認証コードの受け取り（所持要素）を合わせた2段階認証。
+            青のアクセントカラーはそのまま、IDの切り替えをタブでできるように変更。初回ログイン以降、ログインIDを自動入力する仕様も追加しました。
          </p>
       </figcaption>
    </figure>
@@ -83,11 +92,13 @@
    </section>
 
    <figure>
-      <img src="../image/wp_2fa_spec_phonenumber.png">
+      <img src="../image/wp_2fa_phonenumber.png">
    </figure>
 
    <figure>
-      <img src="../image/wp_2fa_spec_codeinput.png">
+      <div class="video small">
+         <video src="../image/wp_2fa_video.mov" type="video/mp4" autoplay loop muted playsinline></video>
+      </div>
    </figure>
 
    <!-- Section -->
@@ -110,6 +121,15 @@
             </p>
          </div>
       </section>
+
+      <figure>
+         <img src="../image/wp_sso_localization.png">
+         <figcaption>
+            <p>
+               アプリは日本語、英語、中国語簡体字、中国語繁体字に対応。
+            </p>
+         </figcaption>
+      </figure>
 
       <figure>
          <img src="../image/wp_sso_spec_breakdown.png">

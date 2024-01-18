@@ -2,6 +2,7 @@
 node_modules
 .vercel
 .vscode
+.DS_store
 
 # CSS
 .sass-cache/

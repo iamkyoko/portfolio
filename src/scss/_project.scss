@@ -80,20 +80,20 @@
 }
 
 figure + figure {
-   margin-top: var(--gutter);
+   margin-top: var(--content-space);
 }
 
 video {
    display: flex;
    justify-content: center;
    width: 100%;
-   max-height: 75vh;
+   max-height: 80vh;
    padding: 15% 12.5%;
    background: black;
 }
 
 figcaption {
-   padding-top: 2.4em;
+   padding-top: 4em;
 }
 
 .full {
@@ -132,7 +132,7 @@ figcaption {
    }
 
    video {
-      padding: 8%;
+      padding: 10% 0;
    }
 
    .full {
@@ -169,6 +169,6 @@ figcaption {
       padding-left: calc(25% + var(--gap));
    }
    .small {
-      padding: 0 12.5%
+      padding: 0 10%
    }
 }
