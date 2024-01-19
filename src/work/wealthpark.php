@@ -16,14 +16,14 @@
 
 		<div class="project-description">
 			<p class="jp first-2">
-            WealthPark Businessは不動産管理会社向け業務管理システムです。サービスの一部であるオーナー向けプロダクトのモバイル専任の最初のデザイナーとして入社し、自社ネイティブアプリの新規機能の開発・プロダクトの改善を行いました。
+            WealthPark Businessは不動産管理会社向けの業務管理システムです。サービスの一部であるオーナー向けプロダクトのモバイル専任のデザイナーとして入社し、自社開発のネイティブモバイルアプリの新規機能の開発・改善を行いました。
             <br><br>
             自分の入社時にはアプリリリースから少なくとも2年以上経過していましたが、今までのデザインデータおよびデザインシステムなどは社内に残っていなかったので各プロジェクトの進行に合わせデザインコンポーネントの定義・整理をしていきました。
 			</p>
 			<p class="middle-2">
-            WealthPark Business is a workflow management system for property management companies. I joined the company as the first mobile product designer, and developed new features and product improvements for the native mobile app. 
+            WealthPark Business is a workflow management system for property management companies. I've worked on the native mobile app for property owners and developed new features and improvements. 
             <br><br>
-            When I joined the team, more than two years had passed since the app was released. Yet, there was no design data or design system within the company, so I started defining and organizing design elements as each project progressed.
+            When I joined, more than two years had passed since the app was released. Yet, there was no design data or guideline within the company, I started defining and organizing design elements as each project progressed.
          </p>
 		</div>
 
@@ -42,7 +42,7 @@
       </h2>
       <div class="project-description">
 			<p class="jp">
-            日本国内でも著名な大企業 (B) との契約締結に際し、彼らのエンドユーザー (C) にサービスを提供するための条件として最初に2段階認証、次にシングルサインオンの機能を導入しました。
+            日本国内でも著名な大企業 (B) との契約締結に際し、彼らのエンドユーザー (C) にサービスを提供するための条件として最初に2段階認証、次にシングルサインオンの機能を導入。もうひとりのデザイナーとともにデザイン業務を担当しました。
             <br><br>
             2段階認証で対応する電話番号の定義や認証コードに利用する外部サービスの挙動など、細かな技術仕様を理解するため、プロダクトマネージャー・エンジニアチームとの話し合いを重ねつつデザインを進めました。
          </p>
@@ -86,7 +86,7 @@
 			<p>
             While the product manager led the specification of the main functions and scenarios, designers handled feedback on the login area and added specifications for a smoother experience as "UX/UI spec”.
             <br><br>
-            Assuming that the majority of users will be non-digital natives, I tried to create a flow that allows users to proceed using only their intuition.
+            Assuming that the majority of users will be non-digital natives, I tried to create a flow allows users to proceed using only their intuition.
 			</p>
 		</div>
    </section>
@@ -112,12 +112,12 @@
             <p class="jp">
                2FAのデザイン作業中、タイトなデッドラインに間に合わせるためiOSの画面でフローを作成、Androidの画面は一覧のみを提供することで省エネを図ったつもりが、QAの段階でエンジニアの仕様の誤認識が複数発覚するなど、うまくいきませんでした。
                <br><br>
-               SSOプロジェクトではその反省を生かし、iOS・Androidともにフローに即したデザインを制作。週次でエンジニアに進捗を確認し、地道に軌道修正を実施しました。
+               SSOプロジェクトではその反省を生かし、iOS・Androidともにそれぞれのシナリオに即したデザインを制作。週次でエンジニアに進捗を確認し、地道に軌道修正を実施しました。
             </p>
             <p>
-               During the 2FA project, I tried to simplify the process by creating a different set of designs for iOS and Android to meet a tight deadline. However, this did not work out as well as I hoped: later in the QA phase, it turned out that the engineers had some misconceptions.
+               During the 2FA project, I simplified the process by creating a different set of designs for iOS and Android to meet a tight deadline. However, this did not work out as well as I hoped: later in the QA phase, it turned out that the engineers had some misconceptions.
                <br><br>
-               To avoid such misconceptions in the SSO project, I made sure to create a design for the entire flow for both iOS and Android. I checked progress with the engineers on a weekly basis and stayed in sync throughout the process.
+               To avoid such mistake in the SSO project, I made sure to create design for the entire flow for both iOS and Android. I checked progress with the engineers on a weekly basis and stayed in sync throughout the process.
             </p>
          </div>
       </section>
@@ -146,11 +146,11 @@
    <section class="para max-width">
       <p class="project-dot jp">チームにするための努力</p>
       <h2 class="section-title">
-      Being the first and only designer ever
+      The first and only designer
       </h2>
       <div class="project-description">
          <p class="jp">
-            モバイルエンジニアチームの規模は小さいものの、多国籍であることや、何よりも長く専任のデザイナーが不在だったことから、デザイナーとコミュニケーションをとることに慣れてもらうために「Fika」と称したミーティングを週次で開催。
+            モバイルエンジニアとのコミュニケーションに関して、チームの規模は小さいものの、自分以外のメンバー全員が外国籍であることや、何よりも専任のデザイナーが長く不在だったことを踏まえ、まずはデザイナーと会話することに慣れてもらうために「Fika」と称したミーティングを週次で開催。
             <br><br>
             モバイル関連のプロジェクトが立ち上がるたびに、デザインの説明やFeasibility Check、エンジニアからの質問に回答するなど、モバイルプロダクトにおけるエンジニア・デザイナー間のコミュニケーションの基盤となるミーティングとして運用を続けていました。
 			</p>
