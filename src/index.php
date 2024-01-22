@@ -19,12 +19,12 @@
       <?php $experience = date('Y') - 2016; ?>
       <div class="bio grid">
          <p class="middle-2 jp">
-            チョコに目がないweb・UX/UIデザイナー。<?php echo $experience; ?>年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのち、2社目の会社に入社。半年も経たないうちにうっかりUI/UXデザイナーとしてのキャリアをスタート。
+            チョコに目がないWeb・UX/UIデザイナー。<?php echo $experience; ?>年目。Webスクールに通うため大学を中退後、渋谷の制作会社にwebデザイナーとして4年間勤務したのちうっかりUX/UIデザイナーとしてのキャリアをスタート。
             <br>
-            チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどソフトウェア開発のデザインを手がける。猫派。
+            チームプレイヤーとして奔走しつつ、モバイル・ウェブアプリケーションなどプロダクトのデザインを手がける。猫派。
          </p>
          <p class="last-2">
-            I'm a chocolate-obsessed Web and UX/UI Designer with over <?php echo $experience; ?> years of experience. I left college to join a web design school and landed my first job at a design studio in Shibuya, where I worked for 4 years. In 2020, I switched to my current position, at first in web design. Within 6 months, I began working as a UI/UX designer.
+            Chocolate-obsessed Web and UX/UI Designer with over <?php echo $experience; ?> years of experience. I left college to join a web design school. After working as Web designer for 4 years, I began working as a UI/UX designer.
             <br>
             I love working with teams from different cultures and backgrounds. And cats. I love cats.
          </p>
