@@ -44,7 +44,7 @@
          <p class="jp">
             モバイルエンジニアとのコミュニケーションに関して、チームの規模は小さいものの、自分以外のメンバー全員が外国籍であることや、何よりも専任のデザイナーが長く不在だったことを踏まえ、まずはデザイナーと会話することに慣れてもらうために「Fika」と称したミーティングを週次で開催。
             <br><br>
-            モバイル関連のプロジェクトが立ち上がるたびに、デザインの説明やFeasibility Check、エンジニアからの質問に回答するなど、モバイルプロダクトにおけるエンジニア・デザイナー間のコミュニケーションの基盤となるミーティングとして運用を続けていました。
+            プロジェクトが立ち上がるたびに、デザインの説明やFeasibility Check、エンジニアからの質問に回答するなど、モバイルプロダクトにおけるエンジニア・デザイナー間のコミュニケーションの基盤となるミーティングとして運用を続けていました。
 			</p>
 			<p>
             Although the mobile team was quite small, we had members from around the world. Most importantly, due to the absence of a dedicated designer for a long time, I hosted a weekly meeting called "Fika" to familiarize the team with design-related communication.
