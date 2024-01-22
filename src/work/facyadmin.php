@@ -69,7 +69,7 @@
       <img class="small" src="../image/shopweb_Card_Design.webp">
       <figcaption>
          <p>
-            各情報を細かく分解し、それぞれをカードとしてまとめることで整理。レスポンシブ対応のデザインとして提案しました。
+            それぞれの情報を細かく分解し、それぞれをカードとしてまとめることで整理。レスポンシブ対応のデザインとして提案しました。
          </p>
       </figcaption>
    </figure>
